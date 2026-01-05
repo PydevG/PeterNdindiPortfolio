@@ -1340,17 +1340,16 @@
                 image: "software/4327.jpg"
             },
             {
-            id: 7,
-            name: "AuditFlow",
-            description: "A web-based audit management system designed to streamline audit planning, execution, and reporting. The platform supports secure user authentication, audit task tracking, document management, and structured audit workflows to improve accountability and efficiency.",
-            category: "fullstack",
-            technologies: ["Python", "Django", "SQLite", "HTML/CSS", "JavaScript"],
-            github: "https://github.com/PydevG/AuditFlow",
-            liveDemo: "",
-            featured: false,
-            image: "software/4327.jpg"
-        }
-
+                id: 8,
+                name: "AuditFlow",
+                description: "A web-based audit management system designed to streamline audit planning, execution, and reporting. The platform supports secure user authentication, audit task tracking, document management, and structured audit workflows to improve accountability and efficiency.",
+                category: "fullstack",
+                technologies: ["Python", "Django", "SQLite", "HTML/CSS", "JavaScript"],
+                github: "https://github.com/PydevG/AuditFlow",
+                liveDemo: "",
+                featured: false,
+                image: "software/4327.jpg"
+            }
         ];
 
         // ===== GLOBAL VARIABLES =====
@@ -1360,9 +1359,6 @@
         // DOM Elements
         const projectsGrid = document.getElementById('projectsGrid');
         const filterButtons = document.querySelectorAll('.filter-btn');
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        const mainHeader = document.getElementById('mainHeader');
 
         // ===== FUNCTIONS =====
 
@@ -1385,9 +1381,6 @@
                 projectCard.className = 'project-card';
                 projectCard.setAttribute('data-category', project.category);
                 projectCard.setAttribute('data-id', project.id);
-                
-                // Set animation delay for staggered entrance
-                projectCard.style.animationDelay = `${project.id * 0.1}s`;
                 
                 // Create project card HTML
                 projectCard.innerHTML = `
@@ -1418,24 +1411,6 @@
                 
                 projectsGrid.appendChild(projectCard);
             });
-            
-            // Add CSS animation
-            const style = document.createElement('style');
-            style.textContent = `
-                .project-card {
-                    opacity: 0;
-                    transform: translateY(20px);
-                    animation: fadeInUp 0.6s ease forwards;
-                }
-                
-                @keyframes fadeInUp {
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-            `;
-            document.head.appendChild(style);
         }
 
         // Filter projects
@@ -1462,6 +1437,11 @@
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
+            // ===== MOBILE MENU SETUP =====
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            const mainHeader = document.getElementById('mainHeader');
+            
             // Set current year
             document.getElementById('currentYear').textContent = new Date().getFullYear();
             
@@ -1476,38 +1456,76 @@
                 });
             });
             
-            // Mobile menu toggle
-            mobileMenuBtn.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close mobile menu when clicking a link
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
+            // ===== MOBILE MENU FUNCTIONALITY =====
+            if (mobileMenuBtn && navLinks) {
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    navLinks.classList.toggle('active');
+                    
+                    // Toggle hamburger icon
+                    const icon = this.querySelector('i');
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
                 });
-            });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (navLinks.classList.contains('active') && 
+                        !navLinks.contains(e.target) && 
+                        !mobileMenuBtn.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+                
+                // Close menu when clicking a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
             
             // Smooth scroll for navigation
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
+                    // Don't prevent default for external links or mailto
+                    if (this.getAttribute('href').startsWith('#') || 
+                        this.getAttribute('href').startsWith('mailto:')) {
+                        e.preventDefault();
+                        
+                        const targetId = this.getAttribute('href');
+                        if (targetId === '#' || targetId.startsWith('mailto:')) return;
+                        
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
                     }
                 });
             });
             
             // Header scroll effect
             window.addEventListener('scroll', () => {
+                if (!mainHeader) return;
+                
                 if (window.scrollY > 100) {
                     mainHeader.classList.add('scrolled');
                 } else {
@@ -1534,53 +1552,11 @@
             });
             
             // Set repo count
-            document.getElementById('repoCount').textContent = `${projectsData.length}+`;
-        });
-        // ===== MOBILE MENU FIX =====
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-    
-    if (mobileMenuBtn && navLinks) {
-        // Toggle menu on hamburger click
-        mobileMenuBtn.addEventListener('click', function(e) {
-            e.stopPropagation(); // Prevent event bubbling
-            navLinks.classList.toggle('active');
-            
-            // Toggle hamburger icon
-            const icon = this.querySelector('i');
-            if (navLinks.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
+            const repoCountEl = document.getElementById('repoCount');
+            if (repoCountEl) {
+                repoCountEl.textContent = `${projectsData.length}+`;
             }
         });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (navLinks.classList.contains('active') && 
-                !navLinks.contains(e.target) && 
-                !mobileMenuBtn.contains(e.target)) {
-                navLinks.classList.remove('active');
-                const icon = mobileMenuBtn.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
-        
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                const icon = mobileMenuBtn.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            });
-        });
-    }
-});
     </script>
 </body>
 </html>
