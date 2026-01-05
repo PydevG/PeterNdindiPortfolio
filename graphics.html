@@ -202,6 +202,8 @@
             color: var(--primary);
             background: none;
             border: none;
+            z-index: 1001;
+            position: relative;
         }
 
         /* ===== HERO SECTION ===== */
@@ -760,7 +762,7 @@
             margin-left: 0.5rem;
         }
 
-        /* ===== RESPONSIVE STYLES ===== */
+        /* ===== RESPONSIVE STYLES - UPDATED ===== */
         @media (max-width: 1200px) {
             .portfolio-grid {
                 grid-template-columns: repeat(3, 1fr);
@@ -810,29 +812,34 @@
             h1 { font-size: 2.4rem; }
             h2 { font-size: 1.8rem; }
             
+            /* MOBILE MENU FIX */
             .mobile-menu-btn {
-                display: block;
+                display: block !important;
+                position: relative;
+                z-index: 1001;
             }
             
             .nav-links {
                 position: fixed;
-                top: 70px;
+                top: 0;
                 left: 0;
                 width: 100%;
+                height: 100vh;
                 background-color: var(--white);
                 flex-direction: column;
                 align-items: center;
-                padding: 1.5rem 0;
+                justify-content: center;
+                padding: 2rem 0;
                 box-shadow: var(--shadow);
-                transform: translateY(-100%);
+                transform: translateX(-100%);
                 opacity: 0;
-                transition: var(--transition);
-                z-index: 999;
-                gap: 1.2rem;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                z-index: 1000;
+                gap: 2rem;
             }
             
             .nav-links.active {
-                transform: translateY(0);
+                transform: translateX(0);
                 opacity: 1;
             }
             
@@ -957,12 +964,6 @@
         border-radius: 50%;
         border: 6px solid var(--off-white);
     }
-
-    /* For different object-fit options:
-    - 'cover': Crop to fill container (best for photos)
-    - 'contain': Show entire image (might have empty space)
-    - 'fill': Stretch to fill (distorts image)
-    */
     </style>
 </head>
 <body>
@@ -971,10 +972,10 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">PETER NDINDI<span> MBUTHIA</span></a>
-                <button class="mobile-menu-btn">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
                 </button>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -1000,8 +1001,8 @@
                         <a href="#portfolio" class="btn">
                         <i class="fas fa-eye"></i> View Portfolio
                         </a>
-                        <a href="index.html" class="btn btn-outline">
-                            <i class="fas fa-palette"></i> Software Portfolio
+                        <a href="software.html" class="btn btn-outline">
+                            <i class="fas fa-code"></i> Software Portfolio
                         </a>
                     </div>
                 </div>
@@ -1153,27 +1154,86 @@
     </div>
 
     <script>
-        // ===== PORTFOLIO DATA LOADER =====
+        // ===== MOBILE MENU - SIMPLE WORKING VERSION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded - initializing mobile menu...');
+            
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            console.log('Mobile menu button:', mobileMenuBtn);
+            console.log('Nav links:', navLinks);
+            
+            if (mobileMenuBtn && navLinks) {
+                console.log('Setting up mobile menu event listeners...');
+                
+                // Toggle menu when hamburger is clicked
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    console.log('Hamburger clicked!');
+                    e.stopPropagation();
+                    
+                    navLinks.classList.toggle('active');
+                    
+                    // Toggle icon
+                    const icon = this.querySelector('i');
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                        console.log('Menu opened');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                        console.log('Menu closed');
+                    }
+                });
+                
+                // Close menu when clicking a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        console.log('Link clicked, closing menu');
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (navLinks.classList.contains('active') && 
+                        !navLinks.contains(e.target) && 
+                        !mobileMenuBtn.contains(e.target)) {
+                        console.log('Clicked outside, closing menu');
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                });
+                
+                console.log('Mobile menu setup complete!');
+            } else {
+                console.error('Mobile menu elements not found!');
+            }
+            
+            // Set current year in footer
+            const currentYearEl = document.getElementById('currentYear');
+            if (currentYearEl) {
+                currentYearEl.textContent = new Date().getFullYear();
+            }
+        });
+
+        // ===== PORTFOLIO FUNCTIONALITY =====
         let portfolioData = [];
         let filteredItems = [];
         let currentPage = 1;
-        const itemsPerPage = 12; // 4 rows x 3 columns = 12 items per page
+        const itemsPerPage = 12;
         let currentFilter = 'all';
         let currentModalIndex = 0;
-
-        // DOM Elements
-        const portfolioGrid = document.getElementById('portfolioGrid');
-        const paginationEl = document.getElementById('pagination');
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const imageModal = document.getElementById('imageModal');
-        const modalImage = document.getElementById('modalImage');
-        const modalTitle = document.getElementById('modalTitle');
-        const modalCategory = document.getElementById('modalCategory');
-        const modalClose = document.getElementById('modalClose');
-        const modalPrev = document.getElementById('modalPrev');
-        const modalNext = document.getElementById('modalNext');
-        const designCountEl = document.getElementById('designCount');
-        const lastUpdatedEl = document.getElementById('lastUpdated');
 
         // Load portfolio data from JSON
         async function loadPortfolioData() {
@@ -1182,7 +1242,7 @@
                 const data = await response.json();
                 portfolioData = data.designs || [];
 
-                // Sort by category (logos first, then branding, etc.)
+                // Sort by category
                 const categoryOrder = {
                     'branding': 1,
                     'logo': 2,
@@ -1191,7 +1251,6 @@
                 };
                 
                 portfolioData.sort((a, b) => {
-                    // First by category
                     const catA = categoryOrder[a.category] || 5;
                     const catB = categoryOrder[b.category] || 5;
                     
@@ -1199,14 +1258,12 @@
                         return catA - catB;
                     }
                     
-                    // Then by ID (or title if you prefer)
                     return a.id - b.id;
                 });
                 
                 if (portfolioData.length > 0) {
-                    // Update UI with loaded data
-                    designCountEl.textContent = portfolioData.length;
-                    lastUpdatedEl.textContent = new Date().toLocaleDateString('en-US', {
+                    document.getElementById('designCount').textContent = portfolioData.length;
+                    document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'short',
                         day: 'numeric'
@@ -1225,9 +1282,8 @@
             }
         }
 
-        // Show message when no data is found
         function showNoDataMessage() {
-            portfolioGrid.innerHTML = `
+            document.getElementById('portfolioGrid').innerHTML = `
                 <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
                     <h3>Portfolio Data Not Found</h3>
                     <p>Please make sure you have created the data.json file using the upload helper.</p>
@@ -1240,8 +1296,8 @@
             `;
         }
 
-        // Render portfolio items in 3-column grid
         function renderPortfolioItems() {
+            const portfolioGrid = document.getElementById('portfolioGrid');
             portfolioGrid.innerHTML = '';
             
             const startIndex = (currentPage - 1) * itemsPerPage;
@@ -1261,13 +1317,6 @@
             itemsToShow.forEach((item, index) => {
                 const portfolioItem = document.createElement('div');
                 portfolioItem.className = 'portfolio-item';
-                portfolioItem.setAttribute('data-category', item.category);
-                portfolioItem.setAttribute('data-id', item.id);
-                
-                // Add animation delay for staggered entrance
-                portfolioItem.style.animationDelay = `${index * 0.05}s`;
-                portfolioItem.style.animation = 'fadeInUp 0.4s ease forwards';
-                
                 portfolioItem.innerHTML = `
                     <div class="portfolio-img-container">
                         <img src="${item.image}" alt="${item.title}" class="portfolio-img" loading="lazy">
@@ -1284,26 +1333,10 @@
                 portfolioItem.addEventListener('click', () => openModal(item.id));
                 portfolioGrid.appendChild(portfolioItem);
             });
-            
-            // Add CSS animation
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes fadeInUp {
-                    from {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-            `;
-            document.head.appendChild(style);
         }
 
-        // Render pagination
         function renderPagination() {
+            const paginationEl = document.getElementById('pagination');
             paginationEl.innerHTML = '';
             const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
             
@@ -1318,46 +1351,24 @@
                     currentPage--;
                     renderPortfolioItems();
                     renderPagination();
-                    scrollToPortfolio();
                 });
                 paginationEl.appendChild(prevBtn);
             }
             
-            // Show limited page numbers (first, current-1, current, current+1, last)
-            const pagesToShow = new Set([1, totalPages]);
-            
-            // Add pages around current
-            for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
-                pagesToShow.add(i);
-            }
-            
-            // Convert to array and sort
-            const sortedPages = Array.from(pagesToShow).sort((a, b) => a - b);
-            
-            // Render page buttons
-            let prevPage = 0;
-            sortedPages.forEach(page => {
-                // Add ellipsis if there's a gap
-                if (page - prevPage > 1) {
-                    const dots = document.createElement('span');
-                    dots.className = 'page-dots';
-                    dots.textContent = '...';
-                    paginationEl.appendChild(dots);
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+                    const pageBtn = document.createElement('button');
+                    pageBtn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
+                    pageBtn.textContent = i;
+                    pageBtn.addEventListener('click', () => {
+                        currentPage = i;
+                        renderPortfolioItems();
+                        renderPagination();
+                    });
+                    paginationEl.appendChild(pageBtn);
                 }
-                
-                const pageBtn = document.createElement('button');
-                pageBtn.className = `page-btn ${page === currentPage ? 'active' : ''}`;
-                pageBtn.textContent = page;
-                pageBtn.addEventListener('click', () => {
-                    currentPage = page;
-                    renderPortfolioItems();
-                    renderPagination();
-                    scrollToPortfolio();
-                });
-                paginationEl.appendChild(pageBtn);
-                
-                prevPage = page;
-            });
+            }
             
             // Next button
             if (currentPage < totalPages) {
@@ -1368,13 +1379,11 @@
                     currentPage++;
                     renderPortfolioItems();
                     renderPagination();
-                    scrollToPortfolio();
                 });
                 paginationEl.appendChild(nextBtn);
             }
         }
 
-        // Filter portfolio
         function filterPortfolio(filter) {
             currentFilter = filter;
             currentPage = 1;
@@ -1389,7 +1398,7 @@
             renderPagination();
             
             // Update active filter button
-            filterButtons.forEach(btn => {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
                 if (btn.getAttribute('data-filter') === filter) {
                     btn.classList.add('active');
                 } else {
@@ -1398,143 +1407,30 @@
             });
         }
 
-        // Open modal
         function openModal(id) {
             currentModalIndex = filteredItems.findIndex(item => item.id === id);
             if (currentModalIndex === -1) return;
             
             const item = filteredItems[currentModalIndex];
-            modalImage.src = item.image;
-            modalTitle.textContent = item.title;
-            modalCategory.textContent = item.categoryName || 'Design';
-            imageModal.classList.add('active');
+            document.getElementById('modalImage').src = item.image;
+            document.getElementById('modalTitle').textContent = item.title;
+            document.getElementById('modalCategory').textContent = item.categoryName || 'Design';
+            document.getElementById('imageModal').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
 
-        // Close modal
         function closeModal() {
-            imageModal.classList.remove('active');
+            document.getElementById('imageModal').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
 
-        // Navigate to previous image in modal
-        function prevModalImage() {
-            if (currentModalIndex > 0) {
-                currentModalIndex--;
-                const item = filteredItems[currentModalIndex];
-                modalImage.src = item.image;
-                modalTitle.textContent = item.title;
-                modalCategory.textContent = item.categoryName || 'Design';
-            }
-        }
-
-        // Navigate to next image in modal
-        function nextModalImage() {
-            if (currentModalIndex < filteredItems.length - 1) {
-                currentModalIndex++;
-                const item = filteredItems[currentModalIndex];
-                modalImage.src = item.image;
-                modalTitle.textContent = item.title;
-                modalCategory.textContent = item.categoryName || 'Design';
-            }
-        }
-
-        // Scroll to portfolio section
-        function scrollToPortfolio() {
-            window.scrollTo({
-                top: document.getElementById('portfolio').offsetTop - 100,
-                behavior: 'smooth'
-            });
-        }
-
-        // ===== MOBILE MENU FUNCTIONALITY =====
-        function initializeMobileMenu() {
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            const navLinks = document.querySelector('.nav-links');
-            const mainHeader = document.getElementById('mainHeader');
-            
-            if (!mobileMenuBtn || !navLinks) return;
-            
-            // Mobile menu toggle
-            mobileMenuBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                navLinks.classList.toggle('active');
-                
-                // Toggle hamburger icon
-                const icon = this.querySelector('i');
-                if (navLinks.classList.contains('active')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
-                } else {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            });
-            
-            // Close menu when clicking outside
-            document.addEventListener('click', function(e) {
-                if (navLinks.classList.contains('active') && 
-                    !navLinks.contains(e.target) && 
-                    !mobileMenuBtn.contains(e.target)) {
-                    navLinks.classList.remove('active');
-                    const icon = mobileMenuBtn.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            });
-            
-            // Close menu when clicking a link
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                    const icon = mobileMenuBtn.querySelector('i');
-                    if (icon) {
-                        icon.classList.remove('fa-times');
-                        icon.classList.add('fa-bars');
-                    }
-                });
-            });
-            
-            // Header scroll effect
-            if (mainHeader) {
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 100) {
-                        mainHeader.classList.add('scrolled');
-                    } else {
-                        mainHeader.classList.remove('scrolled');
-                    }
-                    
-                    // Update active nav link
-                    const scrollPosition = window.scrollY + 150;
-                    
-                    document.querySelectorAll('section').forEach(section => {
-                        const sectionTop = section.offsetTop;
-                        const sectionHeight = section.clientHeight;
-                        const sectionId = section.getAttribute('id');
-                        
-                        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                            document.querySelectorAll('.nav-links a').forEach(link => {
-                                link.classList.remove('active');
-                                if (link.getAttribute('href') === `#${sectionId}`) {
-                                    link.classList.add('active');
-                                }
-                            });
-                        }
-                    });
-                });
-            }
-        }
-
-        // ===== INITIALIZE EVERYTHING =====
+        // Initialize portfolio functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // Set current year
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
-            
             // Load portfolio data
             loadPortfolioData();
             
             // Filter button events
-            filterButtons.forEach(button => {
+            document.querySelectorAll('.filter-btn').forEach(button => {
                 button.addEventListener('click', () => {
                     const filter = button.getAttribute('data-filter');
                     filterPortfolio(filter);
@@ -1542,34 +1438,48 @@
             });
             
             // Modal events
-            modalClose.addEventListener('click', closeModal);
-            modalPrev.addEventListener('click', prevModalImage);
-            modalNext.addEventListener('click', nextModalImage);
+            document.getElementById('modalClose').addEventListener('click', closeModal);
+            document.getElementById('modalPrev').addEventListener('click', () => {
+                if (currentModalIndex > 0) {
+                    currentModalIndex--;
+                    const item = filteredItems[currentModalIndex];
+                    document.getElementById('modalImage').src = item.image;
+                    document.getElementById('modalTitle').textContent = item.title;
+                    document.getElementById('modalCategory').textContent = item.categoryName || 'Design';
+                }
+            });
+            document.getElementById('modalNext').addEventListener('click', () => {
+                if (currentModalIndex < filteredItems.length - 1) {
+                    currentModalIndex++;
+                    const item = filteredItems[currentModalIndex];
+                    document.getElementById('modalImage').src = item.image;
+                    document.getElementById('modalTitle').textContent = item.title;
+                    document.getElementById('modalCategory').textContent = item.categoryName || 'Design';
+                }
+            });
             
             // Close modal on background click
-            imageModal.addEventListener('click', (e) => {
-                if (e.target === imageModal) {
+            document.getElementById('imageModal').addEventListener('click', (e) => {
+                if (e.target === document.getElementById('imageModal')) {
                     closeModal();
                 }
             });
             
             // Keyboard navigation
             document.addEventListener('keydown', (e) => {
-                if (!imageModal.classList.contains('active')) return;
+                if (!document.getElementById('imageModal').classList.contains('active')) return;
                 
                 if (e.key === 'Escape') closeModal();
-                if (e.key === 'ArrowLeft') prevModalImage();
-                if (e.key === 'ArrowRight') nextModalImage();
+                if (e.key === 'ArrowLeft') document.getElementById('modalPrev').click();
+                if (e.key === 'ArrowRight') document.getElementById('modalNext').click();
             });
             
-            // Smooth scroll for navigation
+            // Smooth scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
-                    
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
-                    
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
                         window.scrollTo({
@@ -1579,9 +1489,6 @@
                     }
                 });
             });
-            
-            // Initialize mobile menu
-            initializeMobileMenu();
         });
     </script>
 </body>
