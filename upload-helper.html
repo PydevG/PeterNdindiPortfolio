@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Portfolio JSON - Peter</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; }
+        h1 { color: #333; }
+        .drop-zone { 
+            border: 3px dashed #007bff; 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-radius: 10px; 
+            margin: 30px 0;
+            cursor: pointer;
+            background: #f8f9fa;
+        }
+        .drop-zone:hover { background: #e9ecef; }
+        .btn { 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            padding: 12px 30px; 
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover { background: #0056b3; }
+        .progress { 
+            background: #28a745; 
+            height: 5px; 
+            width: 0%; 
+            transition: width 0.3s;
+            margin: 20px 0;
+        }
+        .image-list { 
+            max-height: 300px; 
+            overflow-y: auto; 
+            margin: 20px 0; 
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .counter { font-weight: bold; color: #007bff; }
+    </style>
+</head>
+<body>
+    <h1>📁 Portfolio JSON Generator</h1>
+    <p>Upload all your images at once (190+ images), and this will automatically create the JSON file for your portfolio.</p>
+    
+    <div class="drop-zone" id="dropZone">
+        <h2>📤 Drag & Drop ALL Your Images Here</h2>
+        <p>or click to select all images at once (Ctrl+A in your images folder)</p>
+        <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+    </div>
+    
+    <div class="progress" id="progressBar"></div>
+    
+    <div id="status"></div>
+    
+    <div class="image-list" id="imageList"></div>
+    
+    <button class="btn" id="generateBtn" disabled>Generate Portfolio JSON</button>
+    <button class="btn" id="downloadBtn" disabled>Download data.json</button>
+    
+    <div style="margin-top: 40px; padding: 20px; background: #e7f3ff; border-radius: 10px;">
+        <h3>Next Steps:</h3>
+        <p>1. Upload all images using the drop zone above</p>
+        <p>2. Click "Generate Portfolio JSON"</p>
+        <p>3. Download the data.json file</p>
+        <p>4. Copy the downloaded data.json file to your portfolio folder</p>
+        <p>5. Open index.html in your browser - Done!</p>
+    </div>
+
+    <script>
+        let allImages = [];
+        
+        // Drag and drop
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const generateBtn = document.getElementById('generateBtn');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const progressBar = document.getElementById('progressBar');
+        const statusEl = document.getElementById('status');
+        const imageListEl = document.getElementById('imageList');
+        
+        dropZone.addEventListener('click', () => fileInput.click());
+        
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#28a745';
+            dropZone.style.background = '#d4edda';
+        });
+        
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.style.borderColor = '#007bff';
+            dropZone.style.background = '#f8f9fa';
+        });
+        
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#007bff';
+            dropZone.style.background = '#f8f9fa';
+            handleFiles(e.dataTransfer.files);
+        });
+        
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+        
+        function handleFiles(files) {
+            if (files.length === 0) return;
+            
+            statusEl.innerHTML = `<p>Processing ${files.length} images...</p>`;
+            progressBar.style.width = '0%';
+            
+            // Reset
+            allImages = [];
+            imageListEl.innerHTML = '';
+            
+            let processed = 0;
+            
+            // Process each file
+            Array.from(files).forEach((file, index) => {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    // Create image to get dimensions
+                    const img = new Image();
+                    img.onload = function() {
+                        // Determine orientation
+                        let orientation = 'square';
+                        if (img.width > img.height * 1.2) orientation = 'horizontal';
+                        if (img.height > img.width * 1.2) orientation = 'vertical';
+                        if (img.width > 1000 && img.height > 1000) orientation = 'large';
+                        
+                        // Clean up filename for title
+                        let title = file.name
+                            .replace(/\.[^/.]+$/, "")
+                            .replace(/[_-]/g, " ")
+                            .replace(/(^\w|\s\w)/g, m => m.toUpperCase());
+                        
+                        // Assign random category
+                        const categories = ['logo', 'branding', 'print', 'digital'];
+                        const category = categories[Math.floor(Math.random() * categories.length)];
+                        const categoryNames = {
+                            'logo': 'Logo Design',
+                            'branding': 'Brand Identity',
+                            'print': 'Print Design',
+                            'digital': 'Digital Graphics'
+                        };
+                        
+                        // Add to images array
+                        allImages.push({
+                            id: index + 1,
+                            title: title,
+                            fileName: file.name,
+                            category: category,
+                            categoryName: categoryNames[category],
+                            orientation: orientation,
+                            width: img.width,
+                            height: img.height,
+                            // For local use, we'll use relative paths
+                            image: `images/${file.name}`
+                        });
+                        
+                        // Update UI
+                        imageListEl.innerHTML += `<div>✓ ${file.name} (${img.width}x${img.height})</div>`;
+                        
+                        processed++;
+                        progressBar.style.width = `${(processed / files.length) * 100}%`;
+                        
+                        // When all processed
+                        if (processed === files.length) {
+                            statusEl.innerHTML = `<p style="color: green;">✅ Successfully processed ${allImages.length} images!</p>`;
+                            generateBtn.disabled = false;
+                            
+                            // Sort by filename
+                            allImages.sort((a, b) => a.fileName.localeCompare(b.fileName));
+                        }
+                    };
+                    img.src = e.target.result;
+                };
+                
+                reader.readAsDataURL(file);
+            });
+        }
+        
+        // Generate JSON
+        generateBtn.addEventListener('click', () => {
+            const portfolioData = {
+                designer: "Peter Ndindi Mbuthia",
+                totalDesigns: allImages.length,
+                designs: allImages,
+                lastUpdated: new Date().toISOString()
+            };
+            
+            // Create downloadable JSON
+            const dataStr = JSON.stringify(portfolioData, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            
+            // Create download link
+            const url = URL.createObjectURL(dataBlob);
+            downloadBtn.onclick = () => {
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'data.json';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            };
+            
+            downloadBtn.disabled = false;
+            statusEl.innerHTML += `<p style="color: green;">✅ Portfolio JSON ready! Click "Download data.json"</p>`;
+            
+            // Also save to localStorage for preview
+            localStorage.setItem('portfolioData', dataStr);
+            
+            // Show preview of first few items
+            console.log("Generated JSON with", allImages.length, "images");
+            console.log("Sample:", allImages.slice(0, 3));
+        });
+    </script>
+</body>
+</html>
