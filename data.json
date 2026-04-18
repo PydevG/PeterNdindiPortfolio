@@ -11,7 +11,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/1602_Blue_LCD_Module-1.png"
+      "image": "images/1602_Blue_LCD_Module-1.png",
+      "thumbnail": "images/thumbs/1602_Blue_LCD_Module-1.webp"
     },
     {
       "id": 16,
@@ -22,7 +23,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/1602_Blue_LCD_Module-2.png"
+      "image": "images/1602_Blue_LCD_Module-2.png",
+      "thumbnail": "images/thumbs/1602_Blue_LCD_Module-2.webp"
     },
     {
       "id": 174,
@@ -33,7 +35,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/1602_Blue_LCD_Module-3.png"
+      "image": "images/1602_Blue_LCD_Module-3.png",
+      "thumbnail": "images/thumbs/1602_Blue_LCD_Module-3.webp"
     },
     {
       "id": 53,
@@ -44,7 +47,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/1602_Blue_LCD_Module-4.png"
+      "image": "images/1602_Blue_LCD_Module-4.png",
+      "thumbnail": "images/thumbs/1602_Blue_LCD_Module-4.webp"
     },
     {
       "id": 73,
@@ -55,7 +59,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/1602_Blue_LCD_Module-5.png"
+      "image": "images/1602_Blue_LCD_Module-5.png",
+      "thumbnail": "images/thumbs/1602_Blue_LCD_Module-5.webp"
     },
     {
       "id": 206,
@@ -66,7 +71,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/65pcs_Flexible_Breadboard_Jumper_Wires.png"
+      "image": "images/65pcs_Flexible_Breadboard_Jumper_Wires.png",
+      "thumbnail": "images/thumbs/65pcs_Flexible_Breadboard_Jumper_Wires.webp"
     },
     {
       "id": 175,
@@ -77,7 +83,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/830_Points_Solderless_Breadboard_PP_Material.png"
+      "image": "images/830_Points_Solderless_Breadboard_PP_Material.png",
+      "thumbnail": "images/thumbs/830_Points_Solderless_Breadboard_PP_Material.webp"
     },
     {
       "id": 62,
@@ -88,7 +95,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/advert.png"
+      "image": "images/advert.png",
+      "thumbnail": "images/thumbs/advert.webp"
     },
     {
       "id": 173,
@@ -99,7 +107,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Arduino_Mega_2560_Development_Board.png"
+      "image": "images/Arduino_Mega_2560_Development_Board.png",
+      "thumbnail": "images/thumbs/Arduino_Mega_2560_Development_Board.webp"
     },
     {
       "id": 197,
@@ -110,7 +119,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Arduino_UNO_R3_DIP.png"
+      "image": "images/Arduino_UNO_R3_DIP.png",
+      "thumbnail": "images/thumbs/Arduino_UNO_R3_DIP.webp"
     },
     {
       "id": 98,
@@ -121,7 +131,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/baby.png"
+      "image": "images/baby.png",
+      "thumbnail": "images/thumbs/baby.webp"
     },
     {
       "id": 118,
@@ -132,7 +143,8 @@
       "orientation": "large",
       "width": 10800,
       "height": 5400,
-      "image": "images/bannerB.png"
+      "image": "images/bannerB.png",
+      "thumbnail": "images/thumbs/bannerB.webp"
     },
     {
       "id": 97,
@@ -143,7 +155,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/bennets-nipple-cream.png"
+      "image": "images/bennets-nipple-cream.png",
+      "thumbnail": "images/thumbs/bennets-nipple-cream.webp"
     },
     {
       "id": 143,
@@ -154,7 +167,8 @@
       "orientation": "large",
       "width": 3508,
       "height": 2680,
-      "image": "images/bg1.png"
+      "image": "images/bg1.png",
+      "thumbnail": "images/thumbs/bg1.webp"
     },
     {
       "id": 142,
@@ -165,7 +179,8 @@
       "orientation": "large",
       "width": 3508,
       "height": 2680,
-      "image": "images/bg2.png"
+      "image": "images/bg2.png",
+      "thumbnail": "images/thumbs/bg2.webp"
     },
     {
       "id": 117,
@@ -176,7 +191,8 @@
       "orientation": "large",
       "width": 2560,
       "height": 2060,
-      "image": "images/blue-tshirt.png"
+      "image": "images/blue-tshirt.png",
+      "thumbnail": "images/thumbs/blue-tshirt.webp"
     },
     {
       "id": 172,
@@ -187,7 +203,8 @@
       "orientation": "large",
       "width": 1944,
       "height": 2176,
-      "image": "images/bmg-ad.png"
+      "image": "images/bmg-ad.png",
+      "thumbnail": "images/thumbs/bmg-ad.webp"
     },
     {
       "id": 141,
@@ -198,7 +215,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/branding.png"
+      "image": "images/branding.png",
+      "thumbnail": "images/thumbs/branding.webp"
     },
     {
       "id": 140,
@@ -209,7 +227,8 @@
       "orientation": "large",
       "width": 2728,
       "height": 3175,
-      "image": "images/bs.png"
+      "image": "images/bs.png",
+      "thumbnail": "images/thumbs/bs.webp"
     },
     {
       "id": 52,
@@ -220,7 +239,8 @@
       "orientation": "large",
       "width": 2728,
       "height": 3175,
-      "image": "images/bs2.png"
+      "image": "images/bs2.png",
+      "thumbnail": "images/thumbs/bs2.webp"
     },
     {
       "id": 42,
@@ -231,7 +251,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/call-for-interns-2.png"
+      "image": "images/call-for-interns-2.png",
+      "thumbnail": "images/thumbs/call-for-interns-2.webp"
     },
     {
       "id": 43,
@@ -242,7 +263,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/call-for-interns.png"
+      "image": "images/call-for-interns.png",
+      "thumbnail": "images/thumbs/call-for-interns.webp"
     },
     {
       "id": 61,
@@ -253,7 +275,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/card-emmanuel.png"
+      "image": "images/card-emmanuel.png",
+      "thumbnail": "images/thumbs/card-emmanuel.webp"
     },
     {
       "id": 196,
@@ -264,7 +287,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3208,
-      "image": "images/cet-kesha.png"
+      "image": "images/cet-kesha.png",
+      "thumbnail": "images/thumbs/cet-kesha.webp"
     },
     {
       "id": 138,
@@ -275,7 +299,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/charity-branding_guide-2.png"
+      "image": "images/charity-branding_guide-2.png",
+      "thumbnail": "images/thumbs/charity-branding_guide-2.webp"
     },
     {
       "id": 139,
@@ -286,7 +311,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/charity-branding-guide-3.png"
+      "image": "images/charity-branding-guide-3.png",
+      "thumbnail": "images/thumbs/charity-branding-guide-3.webp"
     },
     {
       "id": 195,
@@ -297,7 +323,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/charity-branding-guide.png"
+      "image": "images/charity-branding-guide.png",
+      "thumbnail": "images/thumbs/charity-branding-guide.webp"
     },
     {
       "id": 96,
@@ -308,7 +335,8 @@
       "orientation": "large",
       "width": 2000,
       "height": 2000,
-      "image": "images/classicnetpro2.png"
+      "image": "images/classicnetpro2.png",
+      "thumbnail": "images/thumbs/classicnetpro2.webp"
     },
     {
       "id": 95,
@@ -319,7 +347,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/collage.png"
+      "image": "images/collage.png",
+      "thumbnail": "images/thumbs/collage.webp"
     },
     {
       "id": 137,
@@ -330,7 +359,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/congrats.png"
+      "image": "images/congrats.png",
+      "thumbnail": "images/thumbs/congrats.webp"
     },
     {
       "id": 194,
@@ -341,7 +371,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/crusade.png"
+      "image": "images/crusade.png",
+      "thumbnail": "images/thumbs/crusade.webp"
     },
     {
       "id": 15,
@@ -352,7 +383,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/customer-service.png"
+      "image": "images/customer-service.png",
+      "thumbnail": "images/thumbs/customer-service.webp"
     },
     {
       "id": 72,
@@ -363,7 +395,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/deepfreeze-product.png"
+      "image": "images/deepfreeze-product.png",
+      "thumbnail": "images/thumbs/deepfreeze-product.webp"
     },
     {
       "id": 136,
@@ -374,7 +407,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/dettol.png"
+      "image": "images/dettol.png",
+      "thumbnail": "images/thumbs/dettol.webp"
     },
     {
       "id": 14,
@@ -385,7 +419,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/digital-addons-page1.png"
+      "image": "images/digital-addons-page1.png",
+      "thumbnail": "images/thumbs/digital-addons-page1.webp"
     },
     {
       "id": 116,
@@ -396,7 +431,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/discount.png"
+      "image": "images/discount.png",
+      "thumbnail": "images/thumbs/discount.webp"
     },
     {
       "id": 94,
@@ -407,7 +443,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Effaclar_DuoM.png"
+      "image": "images/Effaclar_DuoM.png",
+      "thumbnail": "images/thumbs/Effaclar_DuoM.webp"
     },
     {
       "id": 193,
@@ -418,7 +455,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/eid-final.png"
+      "image": "images/eid-final.png",
+      "thumbnail": "images/thumbs/eid-final.webp"
     },
     {
       "id": 115,
@@ -429,7 +467,8 @@
       "orientation": "large",
       "width": 2000,
       "height": 2000,
-      "image": "images/embubus.png"
+      "image": "images/embubus.png",
+      "thumbnail": "images/thumbs/embubus.webp"
     },
     {
       "id": 93,
@@ -440,7 +479,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/epimax-product.png"
+      "image": "images/epimax-product.png",
+      "thumbnail": "images/thumbs/epimax-product.webp"
     },
     {
       "id": 171,
@@ -451,7 +491,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/ESP-Wroom-32_Wifi_and_Bluetooth_Development_Board.png"
+      "image": "images/ESP-Wroom-32_Wifi_and_Bluetooth_Development_Board.png",
+      "thumbnail": "images/thumbs/ESP-Wroom-32_Wifi_and_Bluetooth_Development_Board.webp"
     },
     {
       "id": 41,
@@ -462,7 +503,8 @@
       "orientation": "large",
       "width": 2728,
       "height": 3175,
-      "image": "images/evangelism_week_poster.png"
+      "image": "images/evangelism_week_poster.png",
+      "thumbnail": "images/thumbs/evangelism_week_poster.webp"
     },
     {
       "id": 170,
@@ -473,7 +515,8 @@
       "orientation": "vertical",
       "width": 828,
       "height": 1170,
-      "image": "images/evangelism-flyer-design.png"
+      "image": "images/evangelism-flyer-design.png",
+      "thumbnail": "images/thumbs/evangelism-flyer-design.webp"
     },
     {
       "id": 114,
@@ -484,7 +527,8 @@
       "orientation": "large",
       "width": 5400,
       "height": 6600,
-      "image": "images/excom.png"
+      "image": "images/excom.png",
+      "thumbnail": "images/thumbs/excom.webp"
     },
     {
       "id": 92,
@@ -495,7 +539,8 @@
       "orientation": "large",
       "width": 5400,
       "height": 6600,
-      "image": "images/excom2.png"
+      "image": "images/excom2.png",
+      "thumbnail": "images/thumbs/excom2.webp"
     },
     {
       "id": 2,
@@ -506,7 +551,8 @@
       "orientation": "large",
       "width": 3970,
       "height": 4522,
-      "image": "images/faithwinner-salon-1.png"
+      "image": "images/faithwinner-salon-1.png",
+      "thumbnail": "images/thumbs/faithwinner-salon-1.webp"
     },
     {
       "id": 113,
@@ -517,7 +563,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Female_to_Female_Dupont_Line_40_Pin_10cm_24AWG.png"
+      "image": "images/Female_to_Female_Dupont_Line_40_Pin_10cm_24AWG.png",
+      "thumbnail": "images/thumbs/Female_to_Female_Dupont_Line_40_Pin_10cm_24AWG.webp"
     },
     {
       "id": 40,
@@ -528,7 +575,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Female_to_Female_Dupont_Line_40_Pin_20cm_24AWG.png"
+      "image": "images/Female_to_Female_Dupont_Line_40_Pin_20cm_24AWG.png",
+      "thumbnail": "images/thumbs/Female_to_Female_Dupont_Line_40_Pin_20cm_24AWG.webp"
     },
     {
       "id": 91,
@@ -539,7 +587,8 @@
       "orientation": "large",
       "width": 10800,
       "height": 5400,
-      "image": "images/flyer1.png"
+      "image": "images/flyer1.png",
+      "thumbnail": "images/thumbs/flyer1.webp"
     },
     {
       "id": 205,
@@ -550,7 +599,8 @@
       "orientation": "large",
       "width": 10800,
       "height": 5400,
-      "image": "images/flyerA.png"
+      "image": "images/flyerA.png",
+      "thumbnail": "images/thumbs/flyerA.webp"
     },
     {
       "id": 112,
@@ -561,7 +611,8 @@
       "orientation": "large",
       "width": 5400,
       "height": 6600,
-      "image": "images/freshers.png"
+      "image": "images/freshers.png",
+      "thumbnail": "images/thumbs/freshers.webp"
     },
     {
       "id": 209,
@@ -572,7 +623,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/funbact.png"
+      "image": "images/funbact.png",
+      "thumbnail": "images/thumbs/funbact.webp"
     },
     {
       "id": 51,
@@ -583,7 +635,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/giftcard.png"
+      "image": "images/giftcard.png",
+      "thumbnail": "images/thumbs/giftcard.webp"
     },
     {
       "id": 169,
@@ -594,7 +647,8 @@
       "orientation": "large",
       "width": 3508,
       "height": 2480,
-      "image": "images/githima-thumbnail.png"
+      "image": "images/githima-thumbnail.png",
+      "thumbnail": "images/thumbs/githima-thumbnail.webp"
     },
     {
       "id": 50,
@@ -605,7 +659,8 @@
       "orientation": "large",
       "width": 2953,
       "height": 3189,
-      "image": "images/giving.png"
+      "image": "images/giving.png",
+      "thumbnail": "images/thumbs/giving.webp"
     },
     {
       "id": 90,
@@ -616,7 +671,8 @@
       "orientation": "large",
       "width": 2886,
       "height": 3312,
-      "image": "images/graduation.png"
+      "image": "images/graduation.png",
+      "thumbnail": "images/thumbs/graduation.webp"
     },
     {
       "id": 168,
@@ -627,7 +683,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/HC-06_Bluetooth_Module-1.png"
+      "image": "images/HC-06_Bluetooth_Module-1.png",
+      "thumbnail": "images/thumbs/HC-06_Bluetooth_Module-1.webp"
     },
     {
       "id": 135,
@@ -638,7 +695,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/HC-06_Bluetooth_Module-2.png"
+      "image": "images/HC-06_Bluetooth_Module-2.png",
+      "thumbnail": "images/thumbs/HC-06_Bluetooth_Module-2.webp"
     },
     {
       "id": 210,
@@ -649,7 +707,8 @@
       "orientation": "horizontal",
       "width": 1500,
       "height": 1000,
-      "image": "images/hero-bck.jpg"
+      "image": "images/hero-bck.jpg",
+      "thumbnail": "images/thumbs/hero-bck.webp"
     },
     {
       "id": 167,
@@ -660,7 +719,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/Holiday-bootcamps.png"
+      "image": "images/Holiday-bootcamps.png",
+      "thumbnail": "images/thumbs/Holiday-bootcamps.webp"
     },
     {
       "id": 89,
@@ -671,7 +731,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/Home-schooling.png"
+      "image": "images/Home-schooling.png",
+      "thumbnail": "images/thumbs/Home-schooling.webp"
     },
     {
       "id": 134,
@@ -682,7 +743,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-August_training.png"
+      "image": "images/hovermode-August_training.png",
+      "thumbnail": "images/thumbs/hovermode-August_training.webp"
     },
     {
       "id": 166,
@@ -693,7 +755,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-bootcamp.png"
+      "image": "images/hovermode-bootcamp.png",
+      "thumbnail": "images/thumbs/hovermode-bootcamp.webp"
     },
     {
       "id": 192,
@@ -704,7 +767,8 @@
       "orientation": "large",
       "width": 1080,
       "height": 1920,
-      "image": "images/hovermode-contact.png"
+      "image": "images/hovermode-contact.png",
+      "thumbnail": "images/thumbs/hovermode-contact.webp"
     },
     {
       "id": 165,
@@ -715,7 +779,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/hovermode-design-1-n.png"
+      "image": "images/hovermode-design-1-n.png",
+      "thumbnail": "images/thumbs/hovermode-design-1-n.webp"
     },
     {
       "id": 164,
@@ -726,7 +791,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/hovermode-design-2-f.png"
+      "image": "images/hovermode-design-2-f.png",
+      "thumbnail": "images/thumbs/hovermode-design-2-f.webp"
     },
     {
       "id": 111,
@@ -737,7 +803,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/hovermode-design-2-n.png"
+      "image": "images/hovermode-design-2-n.png",
+      "thumbnail": "images/thumbs/hovermode-design-2-n.webp"
     },
     {
       "id": 191,
@@ -748,7 +815,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-f.png"
+      "image": "images/hovermode-f.png",
+      "thumbnail": "images/thumbs/hovermode-f.webp"
     },
     {
       "id": 39,
@@ -759,7 +827,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-fathers.png"
+      "image": "images/hovermode-fathers.png",
+      "thumbnail": "images/thumbs/hovermode-fathers.webp"
     },
     {
       "id": 110,
@@ -770,7 +839,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-g.png"
+      "image": "images/hovermode-g.png",
+      "thumbnail": "images/thumbs/hovermode-g.webp"
     },
     {
       "id": 88,
@@ -781,7 +851,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-july_bootcamp.png"
+      "image": "images/hovermode-july_bootcamp.png",
+      "thumbnail": "images/thumbs/hovermode-july_bootcamp.webp"
     },
     {
       "id": 87,
@@ -792,7 +863,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/hovermode-kids-bootcamp_copy.png"
+      "image": "images/hovermode-kids-bootcamp_copy.png",
+      "thumbnail": "images/thumbs/hovermode-kids-bootcamp_copy.webp"
     },
     {
       "id": 133,
@@ -803,7 +875,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-lidar-2.png"
+      "image": "images/hovermode-lidar-2.png",
+      "thumbnail": "images/thumbs/hovermode-lidar-2.webp"
     },
     {
       "id": 13,
@@ -814,7 +887,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-lidar-training.png"
+      "image": "images/hovermode-lidar-training.png",
+      "thumbnail": "images/thumbs/hovermode-lidar-training.webp"
     },
     {
       "id": 208,
@@ -825,7 +899,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-new-month.png"
+      "image": "images/hovermode-new-month.png",
+      "thumbnail": "images/thumbs/hovermode-new-month.webp"
     },
     {
       "id": 109,
@@ -836,7 +911,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-nolines.png"
+      "image": "images/hovermode-nolines.png",
+      "thumbnail": "images/thumbs/hovermode-nolines.webp"
     },
     {
       "id": 132,
@@ -847,7 +923,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-post1-n.png"
+      "image": "images/hovermode-post1-n.png",
+      "thumbnail": "images/thumbs/hovermode-post1-n.webp"
     },
     {
       "id": 163,
@@ -858,7 +935,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-post2.png"
+      "image": "images/hovermode-post2.png",
+      "thumbnail": "images/thumbs/hovermode-post2.webp"
     },
     {
       "id": 131,
@@ -869,7 +947,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-post3.png"
+      "image": "images/hovermode-post3.png",
+      "thumbnail": "images/thumbs/hovermode-post3.webp"
     },
     {
       "id": 148,
@@ -880,7 +959,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/hovermode-updated.png"
+      "image": "images/hovermode-updated.png",
+      "thumbnail": "images/thumbs/hovermode-updated.webp"
     },
     {
       "id": 86,
@@ -891,7 +971,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/installation.png"
+      "image": "images/installation.png",
+      "thumbnail": "images/thumbs/installation.webp"
     },
     {
       "id": 108,
@@ -902,7 +983,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/july-new-month.png"
+      "image": "images/july-new-month.png",
+      "thumbnail": "images/thumbs/july-new-month.webp"
     },
     {
       "id": 60,
@@ -913,7 +995,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/kesha-1.png"
+      "image": "images/kesha-1.png",
+      "thumbnail": "images/thumbs/kesha-1.webp"
     },
     {
       "id": 107,
@@ -924,7 +1007,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/kesha-2.png"
+      "image": "images/kesha-2.png",
+      "thumbnail": "images/thumbs/kesha-2.webp"
     },
     {
       "id": 162,
@@ -935,7 +1019,8 @@
       "orientation": "large",
       "width": 2000,
       "height": 2149,
-      "image": "images/kesha.png"
+      "image": "images/kesha.png",
+      "thumbnail": "images/thumbs/kesha.webp"
     },
     {
       "id": 12,
@@ -946,7 +1031,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/kortex.png"
+      "image": "images/kortex.png",
+      "thumbnail": "images/thumbs/kortex.webp"
     },
     {
       "id": 38,
@@ -957,7 +1043,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/laser-1.png"
+      "image": "images/laser-1.png",
+      "thumbnail": "images/thumbs/laser-1.webp"
     },
     {
       "id": 37,
@@ -968,7 +1055,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/laser-2.png"
+      "image": "images/laser-2.png",
+      "thumbnail": "images/thumbs/laser-2.webp"
     },
     {
       "id": 85,
@@ -979,7 +1067,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/laser-3.png"
+      "image": "images/laser-3.png",
+      "thumbnail": "images/thumbs/laser-3.webp"
     },
     {
       "id": 106,
@@ -990,7 +1079,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/laser-4.png"
+      "image": "images/laser-4.png",
+      "thumbnail": "images/thumbs/laser-4.webp"
     },
     {
       "id": 36,
@@ -1001,7 +1091,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/laser-5.png"
+      "image": "images/laser-5.png",
+      "thumbnail": "images/thumbs/laser-5.webp"
     },
     {
       "id": 190,
@@ -1012,7 +1103,8 @@
       "orientation": "large",
       "width": 2728,
       "height": 3175,
-      "image": "images/launch.png"
+      "image": "images/launch.png",
+      "thumbnail": "images/thumbs/launch.webp"
     },
     {
       "id": 49,
@@ -1023,7 +1115,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/law-f.png"
+      "image": "images/law-f.png",
+      "thumbnail": "images/thumbs/law-f.webp"
     },
     {
       "id": 48,
@@ -1034,7 +1127,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/law-version-2.png"
+      "image": "images/law-version-2.png",
+      "thumbnail": "images/thumbs/law-version-2.webp"
     },
     {
       "id": 11,
@@ -1045,7 +1139,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/law-version-3.png"
+      "image": "images/law-version-3.png",
+      "thumbnail": "images/thumbs/law-version-3.webp"
     },
     {
       "id": 130,
@@ -1056,7 +1151,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/lidar.png"
+      "image": "images/lidar.png",
+      "thumbnail": "images/thumbs/lidar.webp"
     },
     {
       "id": 189,
@@ -1067,7 +1163,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/madaraka-square.png"
+      "image": "images/madaraka-square.png",
+      "thumbnail": "images/thumbs/madaraka-square.webp"
     },
     {
       "id": 35,
@@ -1078,7 +1175,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Male_to_Female_Dupont_Line_40_Pin_20cm_24AWG.png"
+      "image": "images/Male_to_Female_Dupont_Line_40_Pin_20cm_24AWG.png",
+      "thumbnail": "images/thumbs/Male_to_Female_Dupont_Line_40_Pin_20cm_24AWG.webp"
     },
     {
       "id": 129,
@@ -1089,7 +1187,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Male_to_Male_Dupont_Line_40_Pin_20cm_24AWG.png"
+      "image": "images/Male_to_Male_Dupont_Line_40_Pin_20cm_24AWG.png",
+      "thumbnail": "images/thumbs/Male_to_Male_Dupont_Line_40_Pin_20cm_24AWG.webp"
     },
     {
       "id": 161,
@@ -1100,7 +1199,8 @@
       "orientation": "large",
       "width": 1080,
       "height": 1920,
-      "image": "images/mamuza-contact-outro.png"
+      "image": "images/mamuza-contact-outro.png",
+      "thumbnail": "images/thumbs/mamuza-contact-outro.webp"
     },
     {
       "id": 147,
@@ -1111,7 +1211,8 @@
       "orientation": "large",
       "width": 1748,
       "height": 2480,
-      "image": "images/mamuza-flyer-updated.png"
+      "image": "images/mamuza-flyer-updated.png",
+      "thumbnail": "images/thumbs/mamuza-flyer-updated.webp"
     },
     {
       "id": 204,
@@ -1122,7 +1223,8 @@
       "orientation": "large",
       "width": 1748,
       "height": 2480,
-      "image": "images/mamuza-flyer.png"
+      "image": "images/mamuza-flyer.png",
+      "thumbnail": "images/thumbs/mamuza-flyer.webp"
     },
     {
       "id": 128,
@@ -1133,7 +1235,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-new-month-august.png"
+      "image": "images/mamuza-new-month-august.png",
+      "thumbnail": "images/thumbs/mamuza-new-month-august.webp"
     },
     {
       "id": 34,
@@ -1144,7 +1247,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-new-month-july.png"
+      "image": "images/mamuza-new-month-july.png",
+      "thumbnail": "images/thumbs/mamuza-new-month-july.webp"
     },
     {
       "id": 188,
@@ -1155,7 +1259,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-post1.png"
+      "image": "images/mamuza-post1.png",
+      "thumbnail": "images/thumbs/mamuza-post1.webp"
     },
     {
       "id": 33,
@@ -1166,7 +1271,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-post2-n.png"
+      "image": "images/mamuza-post2-n.png",
+      "thumbnail": "images/thumbs/mamuza-post2-n.webp"
     },
     {
       "id": 71,
@@ -1177,7 +1283,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-post3-n.png"
+      "image": "images/mamuza-post3-n.png",
+      "thumbnail": "images/thumbs/mamuza-post3-n.webp"
     },
     {
       "id": 10,
@@ -1188,7 +1295,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-post4.png"
+      "image": "images/mamuza-post4.png",
+      "thumbnail": "images/thumbs/mamuza-post4.webp"
     },
     {
       "id": 160,
@@ -1199,7 +1307,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-post5-n.png"
+      "image": "images/mamuza-post5-n.png",
+      "thumbnail": "images/thumbs/mamuza-post5-n.webp"
     },
     {
       "id": 70,
@@ -1210,7 +1319,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-post6-n.png"
+      "image": "images/mamuza-post6-n.png",
+      "thumbnail": "images/thumbs/mamuza-post6-n.webp"
     },
     {
       "id": 32,
@@ -1221,7 +1331,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-post7.png"
+      "image": "images/mamuza-post7.png",
+      "thumbnail": "images/thumbs/mamuza-post7.webp"
     },
     {
       "id": 31,
@@ -1232,7 +1343,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mamuza-post8.png"
+      "image": "images/mamuza-post8.png",
+      "thumbnail": "images/thumbs/mamuza-post8.webp"
     },
     {
       "id": 207,
@@ -1243,7 +1355,8 @@
       "orientation": "large",
       "width": 5079,
       "height": 11870,
-      "image": "images/mamuza-rollup-banner.png"
+      "image": "images/mamuza-rollup-banner.png",
+      "thumbnail": "images/thumbs/mamuza-rollup-banner.webp"
     },
     {
       "id": 187,
@@ -1254,7 +1367,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MB102_Breadboard_Power_Supply_Module_3.3v_5V.png"
+      "image": "images/MB102_Breadboard_Power_Supply_Module_3.3v_5V.png",
+      "thumbnail": "images/thumbs/MB102_Breadboard_Power_Supply_Module_3.3v_5V.webp"
     },
     {
       "id": 159,
@@ -1265,7 +1379,8 @@
       "orientation": "large",
       "width": 2000,
       "height": 2000,
-      "image": "images/media-hackathon.png"
+      "image": "images/media-hackathon.png",
+      "thumbnail": "images/thumbs/media-hackathon.webp"
     },
     {
       "id": 9,
@@ -1276,7 +1391,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MFRC-52_8HWeFSS.56MHz_RFID_Module_Kit__Reader_S50_Card_Keychain__Pin_Header_for_Arduino.png"
+      "image": "images/MFRC-52_8HWeFSS.56MHz_RFID_Module_Kit__Reader_S50_Card_Keychain__Pin_Header_for_Arduino.png",
+      "thumbnail": "images/thumbs/MFRC-52_8HWeFSS.56MHz_RFID_Module_Kit__Reader_S50_Card_Keychain__Pin_Header_for_Arduino.webp"
     },
     {
       "id": 47,
@@ -1287,7 +1403,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MFRC2.png"
+      "image": "images/MFRC2.png",
+      "thumbnail": "images/thumbs/MFRC2.webp"
     },
     {
       "id": 69,
@@ -1298,7 +1415,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MFRC3.png"
+      "image": "images/MFRC3.png",
+      "thumbnail": "images/thumbs/MFRC3.webp"
     },
     {
       "id": 186,
@@ -1309,7 +1427,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/mission-statement.png"
+      "image": "images/mission-statement.png",
+      "thumbnail": "images/thumbs/mission-statement.webp"
     },
     {
       "id": 68,
@@ -1320,7 +1439,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2813,
-      "image": "images/mount-tour.png"
+      "image": "images/mount-tour.png",
+      "thumbnail": "images/thumbs/mount-tour.webp"
     },
     {
       "id": 146,
@@ -1331,7 +1451,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/moz-offer.png"
+      "image": "images/moz-offer.png",
+      "thumbnail": "images/thumbs/moz-offer.webp"
     },
     {
       "id": 8,
@@ -1342,7 +1463,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MQ-2_Smoke_Sensor-1.png"
+      "image": "images/MQ-2_Smoke_Sensor-1.png",
+      "thumbnail": "images/thumbs/MQ-2_Smoke_Sensor-1.webp"
     },
     {
       "id": 105,
@@ -1353,7 +1475,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MQ-2_Smoke_Sensor-2.png"
+      "image": "images/MQ-2_Smoke_Sensor-2.png",
+      "thumbnail": "images/thumbs/MQ-2_Smoke_Sensor-2.webp"
     },
     {
       "id": 127,
@@ -1364,7 +1487,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MQ-2_Smoke_Sensor-3.png"
+      "image": "images/MQ-2_Smoke_Sensor-3.png",
+      "thumbnail": "images/thumbs/MQ-2_Smoke_Sensor-3.webp"
     },
     {
       "id": 30,
@@ -1375,7 +1499,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MQ-2_Smoke_Sensor-4.png"
+      "image": "images/MQ-2_Smoke_Sensor-4.png",
+      "thumbnail": "images/thumbs/MQ-2_Smoke_Sensor-4.webp"
     },
     {
       "id": 7,
@@ -1386,7 +1511,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/MQ-2_Smoke_Sensor-5.png"
+      "image": "images/MQ-2_Smoke_Sensor-5.png",
+      "thumbnail": "images/thumbs/MQ-2_Smoke_Sensor-5.webp"
     },
     {
       "id": 1,
@@ -1397,7 +1523,8 @@
       "orientation": "large",
       "width": 3725,
       "height": 3197,
-      "image": "images/mubet-outgoing-exec.png"
+      "image": "images/mubet-outgoing-exec.png",
+      "thumbnail": "images/thumbs/mubet-outgoing-exec.webp"
     },
     {
       "id": 59,
@@ -1408,7 +1535,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/netpro3.png"
+      "image": "images/netpro3.png",
+      "thumbnail": "images/thumbs/netpro3.webp"
     },
     {
       "id": 3,
@@ -1419,7 +1547,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/new_year_2026.png"
+      "image": "images/new_year_2026.png",
+      "thumbnail": "images/thumbs/new_year_2026.webp"
     },
     {
       "id": 46,
@@ -1430,7 +1559,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/new-month-october.png"
+      "image": "images/new-month-october.png",
+      "thumbnail": "images/thumbs/new-month-october.webp"
     },
     {
       "id": 104,
@@ -1441,7 +1571,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/new-month-poster-2.png"
+      "image": "images/new-month-poster-2.png",
+      "thumbnail": "images/thumbs/new-month-poster-2.webp"
     },
     {
       "id": 185,
@@ -1452,7 +1583,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/new-month.png"
+      "image": "images/new-month.png",
+      "thumbnail": "images/thumbs/new-month.webp"
     },
     {
       "id": 184,
@@ -1463,7 +1595,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/ones.png"
+      "image": "images/ones.png",
+      "thumbnail": "images/thumbs/ones.webp"
     },
     {
       "id": 29,
@@ -1474,7 +1607,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Our-services.png"
+      "image": "images/Our-services.png",
+      "thumbnail": "images/thumbs/Our-services.webp"
     },
     {
       "id": 58,
@@ -1485,7 +1619,8 @@
       "orientation": "large",
       "width": 1080,
       "height": 1920,
-      "image": "images/outro.png"
+      "image": "images/outro.png",
+      "thumbnail": "images/thumbs/outro.webp"
     },
     {
       "id": 183,
@@ -1496,7 +1631,8 @@
       "orientation": "large",
       "width": 1080,
       "height": 1920,
-      "image": "images/overlay1.png"
+      "image": "images/overlay1.png",
+      "thumbnail": "images/thumbs/overlay1.webp"
     },
     {
       "id": 126,
@@ -1507,7 +1643,8 @@
       "orientation": "large",
       "width": 1080,
       "height": 1920,
-      "image": "images/overlay2.png"
+      "image": "images/overlay2.png",
+      "thumbnail": "images/thumbs/overlay2.webp"
     },
     {
       "id": 158,
@@ -1518,7 +1655,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-new-month-august.png"
+      "image": "images/pharmahub-new-month-august.png",
+      "thumbnail": "images/thumbs/pharmahub-new-month-august.webp"
     },
     {
       "id": 182,
@@ -1529,7 +1667,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-october-new-month.png"
+      "image": "images/pharmahub-october-new-month.png",
+      "thumbnail": "images/thumbs/pharmahub-october-new-month.webp"
     },
     {
       "id": 203,
@@ -1540,7 +1679,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post1-n.png"
+      "image": "images/pharmahub-post1-n.png",
+      "thumbnail": "images/thumbs/pharmahub-post1-n.webp"
     },
     {
       "id": 67,
@@ -1551,7 +1691,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post1-week2.png"
+      "image": "images/pharmahub-post1-week2.png",
+      "thumbnail": "images/thumbs/pharmahub-post1-week2.webp"
     },
     {
       "id": 181,
@@ -1562,7 +1703,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post2-week2.png"
+      "image": "images/pharmahub-post2-week2.png",
+      "thumbnail": "images/thumbs/pharmahub-post2-week2.webp"
     },
     {
       "id": 84,
@@ -1573,7 +1715,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post2.png"
+      "image": "images/pharmahub-post2.png",
+      "thumbnail": "images/thumbs/pharmahub-post2.webp"
     },
     {
       "id": 157,
@@ -1584,7 +1727,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post3-week2.png"
+      "image": "images/pharmahub-post3-week2.png",
+      "thumbnail": "images/thumbs/pharmahub-post3-week2.webp"
     },
     {
       "id": 180,
@@ -1595,7 +1739,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post3.png"
+      "image": "images/pharmahub-post3.png",
+      "thumbnail": "images/thumbs/pharmahub-post3.webp"
     },
     {
       "id": 155,
@@ -1606,7 +1751,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post4-week2.png"
+      "image": "images/pharmahub-post4-week2.png",
+      "thumbnail": "images/thumbs/pharmahub-post4-week2.webp"
     },
     {
       "id": 156,
@@ -1617,7 +1763,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post4.png"
+      "image": "images/pharmahub-post4.png",
+      "thumbnail": "images/thumbs/pharmahub-post4.webp"
     },
     {
       "id": 45,
@@ -1628,7 +1775,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post5-week2.png"
+      "image": "images/pharmahub-post5-week2.png",
+      "thumbnail": "images/thumbs/pharmahub-post5-week2.webp"
     },
     {
       "id": 154,
@@ -1639,7 +1787,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-post5.png"
+      "image": "images/pharmahub-post5.png",
+      "thumbnail": "images/thumbs/pharmahub-post5.webp"
     },
     {
       "id": 125,
@@ -1650,7 +1799,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-w4-2.png"
+      "image": "images/pharmahub-w4-2.png",
+      "thumbnail": "images/thumbs/pharmahub-w4-2.webp"
     },
     {
       "id": 145,
@@ -1661,7 +1811,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-w4-3.png"
+      "image": "images/pharmahub-w4-3.png",
+      "thumbnail": "images/thumbs/pharmahub-w4-3.webp"
     },
     {
       "id": 66,
@@ -1672,7 +1823,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-w4-4.png"
+      "image": "images/pharmahub-w4-4.png",
+      "thumbnail": "images/thumbs/pharmahub-w4-4.webp"
     },
     {
       "id": 28,
@@ -1683,7 +1835,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-w4-5.png"
+      "image": "images/pharmahub-w4-5.png",
+      "thumbnail": "images/thumbs/pharmahub-w4-5.webp"
     },
     {
       "id": 6,
@@ -1694,7 +1847,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/pharmahub-week4-post1.png"
+      "image": "images/pharmahub-week4-post1.png",
+      "thumbnail": "images/thumbs/pharmahub-week4-post1.webp"
     },
     {
       "id": 202,
@@ -1705,7 +1859,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/polinestan2.png"
+      "image": "images/polinestan2.png",
+      "thumbnail": "images/thumbs/polinestan2.webp"
     },
     {
       "id": 144,
@@ -1716,7 +1871,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/post1.png"
+      "image": "images/post1.png",
+      "thumbnail": "images/thumbs/post1.webp"
     },
     {
       "id": 57,
@@ -1727,7 +1883,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/post2.png"
+      "image": "images/post2.png",
+      "thumbnail": "images/thumbs/post2.webp"
     },
     {
       "id": 124,
@@ -1738,7 +1895,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/profile_home.png"
+      "image": "images/profile_home.png",
+      "thumbnail": "images/thumbs/profile_home.webp"
     },
     {
       "id": 119,
@@ -1749,7 +1907,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Raspberry_Pi_Pico_Basic_Starter_Kit.png"
+      "image": "images/Raspberry_Pi_Pico_Basic_Starter_Kit.png",
+      "thumbnail": "images/thumbs/Raspberry_Pi_Pico_Basic_Starter_Kit.webp"
     },
     {
       "id": 83,
@@ -1760,7 +1919,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/rebrand-alert.png"
+      "image": "images/rebrand-alert.png",
+      "thumbnail": "images/thumbs/rebrand-alert.webp"
     },
     {
       "id": 65,
@@ -1771,7 +1931,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/reconciledto.png"
+      "image": "images/reconciledto.png",
+      "thumbnail": "images/thumbs/reconciledto.webp"
     },
     {
       "id": 5,
@@ -1782,7 +1943,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Robotlinking_Creative_Keyboard_Kit_Basic_Version.png"
+      "image": "images/Robotlinking_Creative_Keyboard_Kit_Basic_Version.png",
+      "thumbnail": "images/thumbs/Robotlinking_Creative_Keyboard_Kit_Basic_Version.webp"
     },
     {
       "id": 64,
@@ -1793,7 +1955,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/saturday-and-technical.png"
+      "image": "images/saturday-and-technical.png",
+      "thumbnail": "images/thumbs/saturday-and-technical.webp"
     },
     {
       "id": 103,
@@ -1804,7 +1967,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/School-based-2.png"
+      "image": "images/School-based-2.png",
+      "thumbnail": "images/thumbs/School-based-2.webp"
     },
     {
       "id": 153,
@@ -1815,7 +1979,8 @@
       "orientation": "large",
       "width": 2728,
       "height": 3175,
-      "image": "images/service1.png"
+      "image": "images/service1.png",
+      "thumbnail": "images/thumbs/service1.webp"
     },
     {
       "id": 179,
@@ -1826,7 +1991,8 @@
       "orientation": "large",
       "width": 5400,
       "height": 5400,
-      "image": "images/shopping_bag-new.png"
+      "image": "images/shopping_bag-new.png",
+      "thumbnail": "images/thumbs/shopping_bag-new.webp"
     },
     {
       "id": 123,
@@ -1837,7 +2003,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/shuggy-product.png"
+      "image": "images/shuggy-product.png",
+      "thumbnail": "images/thumbs/shuggy-product.webp"
     },
     {
       "id": 82,
@@ -1848,7 +2015,8 @@
       "orientation": "large",
       "width": 3113,
       "height": 3416,
-      "image": "images/staff_sunday.png"
+      "image": "images/staff_sunday.png",
+      "thumbnail": "images/thumbs/staff_sunday.webp"
     },
     {
       "id": 102,
@@ -1859,7 +2027,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Super_R3_Starter_Kit.png"
+      "image": "images/Super_R3_Starter_Kit.png",
+      "thumbnail": "images/thumbs/Super_R3_Starter_Kit.webp"
     },
     {
       "id": 27,
@@ -1870,7 +2039,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/surgical.png"
+      "image": "images/surgical.png",
+      "thumbnail": "images/thumbs/surgical.webp"
     },
     {
       "id": 81,
@@ -1881,7 +2051,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/Tabs.png"
+      "image": "images/Tabs.png",
+      "thumbnail": "images/thumbs/Tabs.webp"
     },
     {
       "id": 26,
@@ -1892,7 +2063,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/thankyou-note.png"
+      "image": "images/thankyou-note.png",
+      "thumbnail": "images/thumbs/thankyou-note.webp"
     },
     {
       "id": 152,
@@ -1903,7 +2075,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2360,
-      "image": "images/The_heart_of_giving.png"
+      "image": "images/The_heart_of_giving.png",
+      "thumbnail": "images/thumbs/The_heart_of_giving.webp"
     },
     {
       "id": 79,
@@ -1914,7 +2087,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/The_Most_Powerful_Starter_Kit.png"
+      "image": "images/The_Most_Powerful_Starter_Kit.png",
+      "thumbnail": "images/thumbs/The_Most_Powerful_Starter_Kit.webp"
     },
     {
       "id": 122,
@@ -1925,7 +2099,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/the-church-today.png"
+      "image": "images/the-church-today.png",
+      "thumbnail": "images/thumbs/the-church-today.webp"
     },
     {
       "id": 80,
@@ -1936,7 +2111,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3144,
-      "image": "images/theme2025.png"
+      "image": "images/theme2025.png",
+      "thumbnail": "images/thumbs/theme2025.webp"
     },
     {
       "id": 25,
@@ -1947,7 +2123,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3229,
-      "image": "images/themeexpo.png"
+      "image": "images/themeexpo.png",
+      "thumbnail": "images/thumbs/themeexpo.webp"
     },
     {
       "id": 24,
@@ -1958,7 +2135,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Toleriane_Cleansers.png"
+      "image": "images/Toleriane_Cleansers.png",
+      "thumbnail": "images/thumbs/Toleriane_Cleansers.webp"
     },
     {
       "id": 101,
@@ -1969,7 +2147,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/training.png"
+      "image": "images/training.png",
+      "thumbnail": "images/thumbs/training.webp"
     },
     {
       "id": 63,
@@ -1980,7 +2159,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/tyler.png"
+      "image": "images/tyler.png",
+      "thumbnail": "images/thumbs/tyler.webp"
     },
     {
       "id": 23,
@@ -1991,7 +2171,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/updated-hovermode-training.png"
+      "image": "images/updated-hovermode-training.png",
+      "thumbnail": "images/thumbs/updated-hovermode-training.webp"
     },
     {
       "id": 56,
@@ -2002,7 +2183,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/velvex.png"
+      "image": "images/velvex.png",
+      "thumbnail": "images/thumbs/velvex.webp"
     },
     {
       "id": 201,
@@ -2013,7 +2195,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Vicmark-baby-shower-package-2.png"
+      "image": "images/Vicmark-baby-shower-package-2.png",
+      "thumbnail": "images/thumbs/Vicmark-baby-shower-package-2.webp"
     },
     {
       "id": 78,
@@ -2024,7 +2207,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Vicmark-baby-shower-package.png"
+      "image": "images/Vicmark-baby-shower-package.png",
+      "thumbnail": "images/thumbs/Vicmark-baby-shower-package.webp"
     },
     {
       "id": 22,
@@ -2035,7 +2219,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Vicmark-birthday-package-2.png"
+      "image": "images/Vicmark-birthday-package-2.png",
+      "thumbnail": "images/thumbs/Vicmark-birthday-package-2.webp"
     },
     {
       "id": 151,
@@ -2046,7 +2231,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Vicmark-birthday-package.png"
+      "image": "images/Vicmark-birthday-package.png",
+      "thumbnail": "images/thumbs/Vicmark-birthday-package.webp"
     },
     {
       "id": 21,
@@ -2057,7 +2243,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/vicmark-fathers.png"
+      "image": "images/vicmark-fathers.png",
+      "thumbnail": "images/thumbs/vicmark-fathers.webp"
     },
     {
       "id": 20,
@@ -2068,7 +2255,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/vicmark-new-month.png"
+      "image": "images/vicmark-new-month.png",
+      "thumbnail": "images/thumbs/vicmark-new-month.webp"
     },
     {
       "id": 121,
@@ -2079,7 +2267,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/vicmark-post1.png"
+      "image": "images/vicmark-post1.png",
+      "thumbnail": "images/thumbs/vicmark-post1.webp"
     },
     {
       "id": 77,
@@ -2090,7 +2279,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/vicmark-post2.png"
+      "image": "images/vicmark-post2.png",
+      "thumbnail": "images/thumbs/vicmark-post2.webp"
     },
     {
       "id": 200,
@@ -2101,7 +2291,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/vicmark-post3.png"
+      "image": "images/vicmark-post3.png",
+      "thumbnail": "images/thumbs/vicmark-post3.webp"
     },
     {
       "id": 19,
@@ -2112,7 +2303,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/vicmark-post4.png"
+      "image": "images/vicmark-post4.png",
+      "thumbnail": "images/thumbs/vicmark-post4.webp"
     },
     {
       "id": 199,
@@ -2123,7 +2315,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Vicmark-surprise-your-mpoa-2.png"
+      "image": "images/Vicmark-surprise-your-mpoa-2.png",
+      "thumbnail": "images/thumbs/Vicmark-surprise-your-mpoa-2.webp"
     },
     {
       "id": 44,
@@ -2134,7 +2327,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/Vicmark-surprise-your-mpoa.png"
+      "image": "images/Vicmark-surprise-your-mpoa.png",
+      "thumbnail": "images/thumbs/Vicmark-surprise-your-mpoa.webp"
     },
     {
       "id": 4,
@@ -2145,7 +2339,8 @@
       "orientation": "large",
       "width": 2000,
       "height": 2000,
-      "image": "images/walkwithGod.png"
+      "image": "images/walkwithGod.png",
+      "thumbnail": "images/thumbs/walkwithGod.webp"
     },
     {
       "id": 178,
@@ -2156,7 +2351,8 @@
       "orientation": "large",
       "width": 2000,
       "height": 2000,
-      "image": "images/walkwithGod2.png"
+      "image": "images/walkwithGod2.png",
+      "thumbnail": "images/thumbs/walkwithGod2.webp"
     },
     {
       "id": 100,
@@ -2167,7 +2363,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/water-level-1.png"
+      "image": "images/water-level-1.png",
+      "thumbnail": "images/thumbs/water-level-1.webp"
     },
     {
       "id": 120,
@@ -2178,7 +2375,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/water-level-2.png"
+      "image": "images/water-level-2.png",
+      "thumbnail": "images/thumbs/water-level-2.webp"
     },
     {
       "id": 99,
@@ -2189,7 +2387,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/water-level-3.png"
+      "image": "images/water-level-3.png",
+      "thumbnail": "images/thumbs/water-level-3.webp"
     },
     {
       "id": 18,
@@ -2200,7 +2399,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/water-level-4.png"
+      "image": "images/water-level-4.png",
+      "thumbnail": "images/thumbs/water-level-4.webp"
     },
     {
       "id": 198,
@@ -2211,7 +2411,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/water-level-5.png"
+      "image": "images/water-level-5.png",
+      "thumbnail": "images/thumbs/water-level-5.webp"
     },
     {
       "id": 76,
@@ -2222,7 +2423,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/we-are-hiring.png"
+      "image": "images/we-are-hiring.png",
+      "thumbnail": "images/thumbs/we-are-hiring.webp"
     },
     {
       "id": 75,
@@ -2233,7 +2435,8 @@
       "orientation": "large",
       "width": 2759,
       "height": 1924,
-      "image": "images/wedding-e-card.png"
+      "image": "images/wedding-e-card.png",
+      "thumbnail": "images/thumbs/wedding-e-card.webp"
     },
     {
       "id": 177,
@@ -2244,7 +2447,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/wheelchairs-final.png"
+      "image": "images/wheelchairs-final.png",
+      "thumbnail": "images/thumbs/wheelchairs-final.webp"
     },
     {
       "id": 150,
@@ -2255,7 +2459,8 @@
       "orientation": "large",
       "width": 2560,
       "height": 2060,
-      "image": "images/white-tshirt.png"
+      "image": "images/white-tshirt.png",
+      "thumbnail": "images/thumbs/white-tshirt.webp"
     },
     {
       "id": 55,
@@ -2266,7 +2471,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3208,
-      "image": "images/why_give_2.png"
+      "image": "images/why_give_2.png",
+      "thumbnail": "images/thumbs/why_give_2.webp"
     },
     {
       "id": 149,
@@ -2277,7 +2483,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/workshop-1-n.png"
+      "image": "images/workshop-1-n.png",
+      "thumbnail": "images/thumbs/workshop-1-n.webp"
     },
     {
       "id": 74,
@@ -2288,7 +2495,8 @@
       "orientation": "large",
       "width": 2728,
       "height": 3175,
-      "image": "images/youth-meeting-1.png"
+      "image": "images/youth-meeting-1.png",
+      "thumbnail": "images/thumbs/youth-meeting-1.webp"
     },
     {
       "id": 176,
@@ -2299,7 +2507,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3534,
-      "image": "images/youth-sunday-poster.png"
+      "image": "images/youth-sunday-poster.png",
+      "thumbnail": "images/thumbs/youth-sunday-poster.webp"
     },
     {
       "id": 17,
@@ -2310,7 +2519,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/ziva-product.png"
+      "image": "images/ziva-product.png",
+      "thumbnail": "images/thumbs/ziva-product.webp"
     },
     {
       "id": 211,
@@ -2321,7 +2531,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/Brayo-MCA-poster-design.png"
+      "image": "images/Brayo-MCA-poster-design.png",
+      "thumbnail": "images/thumbs/Brayo-MCA-poster-design.webp"
     },
     {
       "id": 212,
@@ -2332,7 +2543,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/bs registration.png"
+      "image": "images/bs registration.png",
+      "thumbnail": "images/thumbs/bs registration.webp"
     },
     {
       "id": 213,
@@ -2343,7 +2555,8 @@
       "orientation": "large",
       "width": 2160,
       "height": 2160,
-      "image": "images/ep1-christian romance.png"
+      "image": "images/ep1-christian romance.png",
+      "thumbnail": "images/thumbs/ep1-christian romance.webp"
     },
     {
       "id": 214,
@@ -2354,7 +2567,8 @@
       "orientation": "large",
       "width": 3430,
       "height": 4538,
-      "image": "images/Faith-beyond-sunday.png"
+      "image": "images/Faith-beyond-sunday.png",
+      "thumbnail": "images/thumbs/Faith-beyond-sunday.webp"
     },
     {
       "id": 215,
@@ -2365,7 +2579,8 @@
       "orientation": "large",
       "width": 4320,
       "height": 4390,
-      "image": "images/Mega-crusade.png"
+      "image": "images/Mega-crusade.png",
+      "thumbnail": "images/thumbs/Mega-crusade.webp"
     },
     {
       "id": 216,
@@ -2376,7 +2591,8 @@
       "orientation": "large",
       "width": 4320,
       "height": 4320,
-      "image": "images/pneumatology.png"
+      "image": "images/pneumatology.png",
+      "thumbnail": "images/thumbs/pneumatology.webp"
     },
     {
       "id": 217,
@@ -2387,7 +2603,8 @@
       "orientation": "large",
       "width": 2480,
       "height": 3508,
-      "image": "images/Prayer Kesha 2026.png"
+      "image": "images/Prayer Kesha 2026.png",
+      "thumbnail": "images/thumbs/Prayer Kesha 2026.webp"
     },
     {
       "id": 218,
@@ -2398,7 +2615,8 @@
       "orientation": "large",
       "width": 3631,
       "height": 4538,
-      "image": "images/s2themeexpo.png"
+      "image": "images/s2themeexpo.png",
+      "thumbnail": "images/thumbs/s2themeexpo.webp"
     },
     {
       "id": 219,
@@ -2409,7 +2627,8 @@
       "orientation": "large",
       "width": 4120,
       "height": 5182,
-      "image": "images/uet-worship-experience-poster.png"
+      "image": "images/uet-worship-experience-poster.png",
+      "thumbnail": "images/thumbs/uet-worship-experience-poster.webp"
     }
   ],
   "lastUpdated": "2026-04-18T00:00:00.000Z"

@@ -2135,7 +2135,7 @@
                     'Large format';
                 portfolioItem.innerHTML = `
                     <div class="portfolio-img-container">
-                        <img src="${item.image}" alt="${item.title}" class="portfolio-img" loading="lazy">
+                        <img src="${item.thumbnail || item.image}" alt="${item.title}" class="portfolio-img" loading="lazy">
                         <div class="portfolio-overlay">
                             <div class="view-indicator">
                                 <i class="fas fa-expand-alt"></i>

@@ -525,7 +525,8 @@
                             width: img.width,
                             height: img.height,
                             // For local use, we'll use relative paths
-                            image: `images/${file.name}`
+                            image: `images/${file.name}`,
+                            thumbnail: `images/thumbs/${file.name.replace(/\.[^/.]+$/, '.webp')}`
                         });
                         
                         // Update UI
