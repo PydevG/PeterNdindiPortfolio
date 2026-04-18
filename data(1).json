@@ -1,0 +1,106 @@
+{
+  "designer": "Peter Ndindi Mbuthia",
+  "totalDesigns": 9,
+  "designs": [
+    {
+      "id": 2,
+      "title": "Brayo MCA Poster Design",
+      "fileName": "Brayo-MCA-poster-design.png",
+      "category": "branding",
+      "categoryName": "Brand Identity",
+      "orientation": "large",
+      "width": 2480,
+      "height": 3508,
+      "image": "images/Brayo-MCA-poster-design.png"
+    },
+    {
+      "id": 7,
+      "title": "Bs Registration",
+      "fileName": "bs registration.png",
+      "category": "digital",
+      "categoryName": "Digital Graphics",
+      "orientation": "large",
+      "width": 2480,
+      "height": 3508,
+      "image": "images/bs registration.png"
+    },
+    {
+      "id": 1,
+      "title": "Ep1 Christian Romance",
+      "fileName": "ep1-christian romance.png",
+      "category": "digital",
+      "categoryName": "Digital Graphics",
+      "orientation": "large",
+      "width": 2160,
+      "height": 2160,
+      "image": "images/ep1-christian romance.png"
+    },
+    {
+      "id": 4,
+      "title": "Faith Beyond Sunday",
+      "fileName": "Faith-beyond-sunday.png",
+      "category": "logo",
+      "categoryName": "Logo Design",
+      "orientation": "large",
+      "width": 3430,
+      "height": 4538,
+      "image": "images/Faith-beyond-sunday.png"
+    },
+    {
+      "id": 5,
+      "title": "Mega Crusade",
+      "fileName": "Mega-crusade.png",
+      "category": "print",
+      "categoryName": "Print Design",
+      "orientation": "large",
+      "width": 4320,
+      "height": 4390,
+      "image": "images/Mega-crusade.png"
+    },
+    {
+      "id": 9,
+      "title": "Pneumatology",
+      "fileName": "pneumatology.png",
+      "category": "logo",
+      "categoryName": "Logo Design",
+      "orientation": "large",
+      "width": 4320,
+      "height": 4320,
+      "image": "images/pneumatology.png"
+    },
+    {
+      "id": 8,
+      "title": "Prayer Kesha 2026",
+      "fileName": "Prayer Kesha 2026.png",
+      "category": "digital",
+      "categoryName": "Digital Graphics",
+      "orientation": "large",
+      "width": 2480,
+      "height": 3508,
+      "image": "images/Prayer Kesha 2026.png"
+    },
+    {
+      "id": 6,
+      "title": "S2themeexpo",
+      "fileName": "s2themeexpo.png",
+      "category": "logo",
+      "categoryName": "Logo Design",
+      "orientation": "large",
+      "width": 3631,
+      "height": 4538,
+      "image": "images/s2themeexpo.png"
+    },
+    {
+      "id": 3,
+      "title": "Uet Worship Experience Poster",
+      "fileName": "uet-worship-experience-poster.png",
+      "category": "print",
+      "categoryName": "Print Design",
+      "orientation": "large",
+      "width": 4120,
+      "height": 5182,
+      "image": "images/uet-worship-experience-poster.png"
+    }
+  ],
+  "lastUpdated": "2026-04-18T05:57:02.287Z"
+}
