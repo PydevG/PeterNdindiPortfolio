@@ -1242,28 +1242,14 @@
                 const data = await response.json();
                 portfolioData = data.designs || [];
 
-                // Sort by category
-                const categoryOrder = {
-                    'branding': 1,
-                    'logo': 2,
-                    'print': 3,
-                    'digital': 4
-                };
-                
                 portfolioData.sort((a, b) => {
-                    const catA = categoryOrder[a.category] || 5;
-                    const catB = categoryOrder[b.category] || 5;
-                    
-                    if (catA !== catB) {
-                        return catA - catB;
-                    }
-                    
-                    return a.id - b.id;
+                    return b.id - a.id;
                 });
                 
                 if (portfolioData.length > 0) {
                     document.getElementById('designCount').textContent = portfolioData.length;
-                    document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+                    const updatedAt = data.lastUpdated ? new Date(data.lastUpdated) : new Date();
+                    document.getElementById('lastUpdated').textContent = updatedAt.toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'short',
                         day: 'numeric'
