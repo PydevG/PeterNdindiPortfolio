@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Ndindi Mbuthia | Graphics Design Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2250,6 +2255,7 @@
             // Load portfolio data
             loadPortfolioData();
             const backToTopBtn = document.getElementById('backToTopBtn');
+            const mainHeader = document.getElementById('mainHeader');
             
             // Filter button events
             document.querySelectorAll('.filter-btn').forEach(button => {
@@ -2296,12 +2302,6 @@
                 if (e.key === 'ArrowRight') document.getElementById('modalNext').click();
             });
 
-            window.addEventListener('scroll', () => {
-                if (backToTopBtn) {
-                    backToTopBtn.classList.toggle('visible', window.scrollY > 320);
-                }
-            });
-            
             // Smooth scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
@@ -2313,6 +2313,37 @@
                         window.scrollTo({
                             top: targetElement.offsetTop - 80,
                             behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            window.addEventListener('scroll', () => {
+                if (mainHeader) {
+                    if (window.scrollY > 100) {
+                        mainHeader.classList.add('scrolled');
+                    } else {
+                        mainHeader.classList.remove('scrolled');
+                    }
+                }
+
+                if (backToTopBtn) {
+                    backToTopBtn.classList.toggle('visible', window.scrollY > 320);
+                }
+
+                const scrollPosition = window.scrollY + 150;
+
+                document.querySelectorAll('section').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        document.querySelectorAll('.nav-links a').forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${sectionId}`) {
+                                link.classList.add('active');
+                            }
                         });
                     }
                 });
