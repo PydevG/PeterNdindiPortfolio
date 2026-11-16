@@ -304,16 +304,6 @@
             max-width: 480px;
         }
 
-        .profile-card::before {
-            content: 'Nairobi, Kenya \2014 Backend systems, APIs, Architecture';
-            display: block;
-            margin-bottom: 12px;
-            color: var(--text-muted);
-            font-size: 0.75rem;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-        }
-
         .profile-frame {
             width: 100%;
             aspect-ratio: 4 / 5;
@@ -371,15 +361,15 @@
 
         /* ===== SECTION HEADERS ===== */
         .section-shell {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: end;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             margin-bottom: 3rem;
         }
 
         .section-copy {
-            padding-right: 2rem;
+            max-width: 760px;
         }
 
         .section-label {
@@ -395,92 +385,85 @@
         .section-shell h2 {
             margin-bottom: 0;
             line-height: 1.1;
+            text-align: center;
         }
 
-        .section-note {
-            padding: 16px 20px;
-            border-left: 2px solid var(--border);
-            color: var(--text-muted);
-            font-size: 0.9375rem;
-            line-height: 1.7;
-        }
-
-        /* ===== SKILLS SECTION ===== */
+        /* ===== CAPABILITIES TABLE ===== */
         .skills-section {
             background: var(--surface);
             border-top: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
         }
 
-        .skills-categories {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+        .capabilities-table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-top: 1px solid var(--border);
         }
 
-        .skill-category {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            padding: 2rem;
-            border-radius: var(--radius-lg);
-        }
-
-        .skill-category h3 {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 0.75rem;
-            color: var(--text);
-            font-size: 1rem;
-        }
-
-        .skill-category h3 i {
-            font-size: 1.125rem;
-            color: var(--accent-blue);
-            width: 20px;
-            text-align: center;
-        }
-
-        .skill-summary {
-            margin-bottom: 1.25rem;
+        .capabilities-table th {
+            text-align: left;
+            padding: 14px 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
             color: var(--text-muted);
-            font-size: 0.875rem;
-            line-height: 1.6;
+            border-bottom: 1px solid var(--border);
         }
 
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .skill-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 14px;
-            background: var(--surface);
-            color: var(--text);
-            border-radius: 999px;
-            font-size: 0.8125rem;
-            font-weight: 500;
-            transition: var(--transition);
-            border: 1px solid var(--border);
-        }
-
-        .skill-tag:hover {
-            background: var(--accent);
-            color: var(--surface);
-            border-color: var(--accent);
-        }
-
-        .skill-tag i {
-            font-size: 0.875rem;
+        .capabilities-table td {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
             color: var(--text-muted);
+            font-size: 0.9375rem;
+            vertical-align: top;
         }
 
-        .skill-tag:hover i {
-            color: var(--surface);
+        .capabilities-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .capabilities-table td:first-child {
+            width: 32%;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        @media (max-width: 640px) {
+            .capabilities-table,
+            .capabilities-table tbody,
+            .capabilities-table tr,
+            .capabilities-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .capabilities-table thead {
+                display: none;
+            }
+
+            .capabilities-table tr {
+                border-bottom: 1px solid var(--border);
+                padding: 4px 0;
+            }
+
+            .capabilities-table tr:last-child {
+                border-bottom: none;
+            }
+
+            .capabilities-table td {
+                border-bottom: none;
+                padding: 6px 4px;
+            }
+
+            .capabilities-table td:first-child {
+                width: 100%;
+                padding-top: 16px;
+            }
         }
 
         /* ===== PROJECTS SECTION ===== */
@@ -491,6 +474,7 @@
         .projects-filter {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 8px;
             margin-bottom: 2.5rem;
         }
@@ -928,22 +912,11 @@
         }
 
         /* ===== RESPONSIVE ===== */
-        @media (max-width: 1024px) {
-            .skills-categories {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
         @media (max-width: 900px) {
             .hero-content,
-            .section-shell,
             .contact-content,
             .footer-content {
                 grid-template-columns: 1fr;
-            }
-
-            .section-copy {
-                padding-right: 0;
             }
 
             .hero { min-height: auto; padding-top: 120px; }
@@ -954,17 +927,12 @@
                 justify-content: center;
             }
 
-            .hero-meta,
             .github-stats {
                 grid-template-columns: 1fr;
             }
 
             .projects-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .section-shell h2 {
-                text-align: left;
             }
         }
 
@@ -1023,10 +991,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .skills-categories {
-                grid-template-columns: 1fr;
-            }
-
             .footer-content {
                 gap: 32px;
             }
@@ -1060,7 +1024,6 @@
             }
 
             .project-content,
-            .skill-category,
             .contact-panel {
                 padding: 20px;
             }
@@ -1218,21 +1181,6 @@
 
         .project-cell:hover .project-media {
             box-shadow: 0 20px 60px rgba(13, 27, 42, 0.15);
-        }
-
-        /* Glassmorphism for Skill Cards */
-        .skill-category {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .skill-category:hover {
-            background: rgba(255, 255, 255, 0.8);
-            border-color: rgba(13, 148, 136, 0.3);
-            box-shadow: 0 8px 32px rgba(13, 148, 136, 0.1);
         }
 
         /* Magnetic Button Effect */
@@ -1396,9 +1344,9 @@
                 </button>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Capabilities</a></li>
                     <li><a href="#github">GitHub</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -1425,20 +1373,6 @@
                             <i class="fas fa-palette"></i> Graphics Portfolio
                         </a>
                     </div>
-                    <div class="hero-meta">
-                        <div class="hero-stat">
-                            <strong>8</strong>
-                            <span>software case studies</span>
-                        </div>
-                        <div class="hero-stat">
-                            <strong>219</strong>
-                            <span>design pieces in archive</span>
-                        </div>
-                        <div class="hero-stat">
-                            <strong>API-first</strong>
-                            <span>systems and backend focus</span>
-                        </div>
-                    </div>
                 </div>
                 <div class="hero-image">
                     <div class="profile-card">
@@ -1459,80 +1393,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-shell">
-                <div class="section-copy">
-                    <span class="section-label">Capabilities</span>
-                    <h2>Tools I use to turn messy ideas into dependable systems.</h2>
-                </div>
-                <div class="section-note">The goal is never to use the most tools. It is to choose the right level of complexity for the product, the team, and the people who will maintain it later.</div>
-            </div>
-            
-            <div class="skills-categories">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <p class="skill-summary">The languages I rely on most for product logic, interfaces, and data work.</p>
-                    <div class="skills-list">
-                        <span class="skill-tag"><i class="devicon-python-plain"></i> Python</span>
-                        <span class="skill-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
-                        <span class="skill-tag"><i class="devicon-html5-plain"></i> HTML5</span>
-                        <span class="skill-tag"><i class="devicon-css3-plain"></i> CSS3</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend Development</h3>
-                    <p class="skill-summary">Where I spend most of my time: APIs, permissions, architecture, and service design.</p>
-                    <div class="skills-list">
-                        <span class="skill-tag"><i class="devicon-django-plain"></i> Django</span>
-                        <span class="skill-tag"><i class="fas fa-bolt"></i> Django REST Framework</span>
-                        <span class="skill-tag"><i class="fas fa-shield-alt"></i> Authentication Systems</span>
-                        <span class="skill-tag"><i class="fas fa-sitemap"></i> Multi-tenant Architecture</span>
-                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> RESTful APIs</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Databases</h3>
-                    <p class="skill-summary">Designing schemas carefully, improving query performance, and keeping data models maintainable.</p>
-                    <div class="skills-list">
-                        <span class="skill-tag"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
-                        <span class="skill-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
-                        <span class="skill-tag"><i class="fas fa-chart-line"></i> Database Optimization</span>
-                        <span class="skill-tag"><i class="fas fa-cogs"></i> Stored Procedures</span>
-                        <span class="skill-tag"><i class="fas fa-layer-group"></i> Database Design</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> DevOps & Tools</h3>
-                    <p class="skill-summary">The tooling that supports delivery, deployment, collaboration, and stable engineering workflows.</p>
-                    <div class="skills-list">
-                        <span class="skill-tag"><i class="devicon-git-plain"></i> Git</span>
-                        <span class="skill-tag"><i class="devicon-github-plain"></i> GitHub</span>
-                        <span class="skill-tag"><i class="devicon-linux-plain"></i> Linux</span>
-                        <span class="skill-tag"><i class="fas fa-cloud-upload-alt"></i> Cloud Deployment</span>
-                        <span class="skill-tag"><i class="fas fa-shield-alt"></i> Security Best Practices</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-building"></i> ERP & Business Systems</h3>
-                    <p class="skill-summary">Implementing and customising enterprise resource planning platforms for business operations.</p>
-                    <div class="skills-list">
-                        <span class="skill-tag"><i class="fas fa-cogs"></i> Frappe Framework</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i> ERPNext</span>
-                        <span class="skill-tag"><i class="fas fa-user-tie"></i> Technofunctional ERPNext Consultant</span>
-                        <span class="skill-tag"><i class="fas fa-chart-bar"></i> Business Process Mapping</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
@@ -1541,7 +1401,6 @@
                     <span class="section-label">Selected Work</span>
                     <h2>Projects shaped around real structure, not tutorial energy.</h2>
                 </div>
-                <div class="section-note">These are the kinds of builds where architecture matters: admin flows, data handling, permissions, content systems, and products that need room to evolve.</div>
             </div>
             
             <div class="projects-filter">
@@ -1565,13 +1424,23 @@
                     <span class="section-label">Experience</span>
                     <h2>A path built through shipping, learning, and refining.</h2>
                 </div>
-                <div class="section-note">I care about long-term engineering quality, but I also know delivery matters. The best work usually comes from balancing both.</div>
             </div>
             
             <div class="experience-list">
                 <div class="experience-row">
                     <div class="experience-date">
-                        <span class="experience-period">May 2026 — Present</span>
+                        <span class="experience-period">Sep 2026 - Present</span>
+                    </div>
+                    <div class="experience-details">
+                        <h3>Associate Software Engineer</h3>
+                        <span class="experience-company">NexPro Business Solutions</span>
+                        <p>Designing and shipping production web systems end to end: REST APIs, PostgreSQL schemas, and Django services that clients rely on daily. The role covers ERPNext and Frappe customisation, third party integrations, code reviews, and steady improvements to the performance and reliability of systems already in use.</p>
+                    </div>
+                </div>
+                
+                <div class="experience-row">
+                    <div class="experience-date">
+                        <span class="experience-period">May 2026 - August 2026</span>
                     </div>
                     <div class="experience-details">
                         <h3>Digital Applications and Solutions Associate</h3>
@@ -1582,7 +1451,7 @@
                 
                 <div class="experience-row">
                     <div class="experience-date">
-                        <span class="experience-period">2023 — Present</span>
+                        <span class="experience-period">2023 - Present</span>
                     </div>
                     <div class="experience-details">
                         <h3>Software Engineering Projects</h3>
@@ -1593,7 +1462,7 @@
                 
                 <div class="experience-row">
                     <div class="experience-date">
-                        <span class="experience-period">May — Aug 2025</span>
+                        <span class="experience-period">May - Aug 2025</span>
                     </div>
                     <div class="experience-details">
                         <h3>Technical Intern</h3>
@@ -1604,7 +1473,7 @@
                 
                 <div class="experience-row">
                     <div class="experience-date">
-                        <span class="experience-period">2022 — 2026</span>
+                        <span class="experience-period">2022 - 2026</span>
                     </div>
                     <div class="experience-details">
                         <h3>Academic & Learning Phase</h3>
@@ -1616,6 +1485,49 @@
         </div>
     </section>
 
+    <!-- Capabilities Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-shell">
+                <div class="section-copy">
+                    <span class="section-label">Capabilities</span>
+                    <h2>Tools I use to turn messy ideas into dependable systems.</h2>
+                </div>
+            </div>
+
+            <table class="capabilities-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programming Languages</td>
+                        <td>Python, JavaScript, HTML5, CSS3, SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Backend Development</td>
+                        <td>Django, Django REST Framework, RESTful APIs, Authentication Systems, Multi-tenant Architecture</td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>PostgreSQL, MySQL, Database Design, Query Optimisation, Stored Procedures</td>
+                    </tr>
+                    <tr>
+                        <td>DevOps &amp; Tools</td>
+                        <td>Git, GitHub, Linux, Cloud Deployment, Security Best Practices</td>
+                    </tr>
+                    <tr>
+                        <td>ERP &amp; Business Systems</td>
+                        <td>Frappe Framework, ERPNext, Business Process Mapping, Solution Design</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
     <!-- GitHub Section -->
     <section id="github" class="github-section">
         <div class="container">
@@ -1624,27 +1536,26 @@
                     <span class="section-label">Code Footprint</span>
                     <h2>Evidence of practice, iteration, and technical range.</h2>
                 </div>
-                <div class="section-note">GitHub is one part of the picture. It shows consistency, curiosity, and the habit of turning ideas into working systems.</div>
             </div>
             
             <div class="github-stats">
                 <div class="stat-item">
-                    <div class="stat-number" id="repoCount">7+</div>
+                    <div class="stat-number">21</div>
                     <div class="stat-label">Public Repositories</div>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <div class="stat-number">190+</div>
+                    <div class="stat-number">740+</div>
                     <div class="stat-label">Total Commits</div>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <div class="stat-number">5+</div>
+                    <div class="stat-number">7+</div>
                     <div class="stat-label">Production Projects</div>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <div class="stat-number">4+</div>
+                    <div class="stat-number">8+</div>
                     <div class="stat-label">Technologies Mastered</div>
                 </div>
             </div>
@@ -1665,7 +1576,6 @@
                     <span class="section-label">Contact</span>
                     <h2>If the work matters, let’s talk about it properly.</h2>
                 </div>
-                <div class="section-note">Open to junior backend roles, internships, collaborations, and thoughtful product conversations where software needs to be both useful and durable.</div>
             </div>
             
             <div class="contact-content">
@@ -1712,7 +1622,7 @@
                 
                 <div class="contact-info contact-panel">
                     <h3>Career Focus</h3>
-                    <p>Seeking entry-level to junior backend engineering roles, internships, or graduate trainee programs where I can contribute to real-world systems and grow into a well-rounded software professional.</p>
+                    <p>Now working as an Associate Software Engineer at NexPro Business Solutions, building backend systems, APIs, and ERP platforms for real clients. Open to backend and full stack roles where engineering quality, clear architecture, and dependable delivery are taken seriously.</p>
                     <p style="margin-top: 1rem;">Best fit for work involving:</p>
                     <ul class="contact-focus-list">
                         <li>Backend system architecture and product foundations</li>
@@ -1742,9 +1652,9 @@
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Capabilities</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -1780,6 +1690,30 @@
     <script>
         // ===== PROJECTS DATA =====
         const projectsData = [
+            {
+                id: 12,
+                name: "Noble Pixels Studio Website",
+                year: "2026",
+                description: "Portfolio and booking site for a photography, film, and live streaming studio. Includes a filterable work gallery, service pages, an admin dashboard for managing projects, contact forms, and a production deployment on MySQL.",
+                category: "fullstack",
+                technologies: ["Django", "MySQL", "Whitenoise", "HTML/CSS", "Responsive Design"],
+                github: "",
+                liveDemo: "https://noble-pixels.com",
+                featured: true,
+                image: "profile/noblepixels.png"
+            },
+            {
+                id: 13,
+                name: "Stanalytics HR Solutions Website",
+                year: "2026",
+                description: "Website for an evidence-led HR consulting firm. Covers service pages for HR metrics, people analytics, dashboards, research, and AI advisory, plus case studies, insights, legal pages, and enquiry handling for prospective clients.",
+                category: "web",
+                technologies: ["Bootstrap", "HTML/CSS", "JavaScript", "Responsive Design", "SEO"],
+                github: "",
+                liveDemo: "https://stanalyticshr.co.ke",
+                featured: true,
+                image: "profile/stanalyticshr.png"
+            },
             {
                 id: 8,
                 name: "CloudEdge Dynamics Africa Website",
@@ -2090,12 +2024,6 @@
                 });
             });
             
-            // Set repo count
-            const repoCountEl = document.getElementById('repoCount');
-            if (repoCountEl) {
-                repoCountEl.textContent = `${projectsData.length}+`;
-            }
-
             if (backToTopBtn) {
                 backToTopBtn.addEventListener('click', () => {
                     window.scrollTo({
@@ -2241,7 +2169,7 @@
             }
 
             // ===== SECTION REVEAL ON SCROLL =====
-            const revealElements = document.querySelectorAll('.section-shell, .skill-category, .experience-row, .stat-item, .contact-panel');
+            const revealElements = document.querySelectorAll('.section-shell, .experience-row, .stat-item, .contact-panel');
             revealElements.forEach(el => el.classList.add('reveal'));
 
             const revealObserver = new IntersectionObserver((entries) => {
